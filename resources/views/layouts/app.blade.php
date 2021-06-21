@@ -53,6 +53,26 @@
         body.loaded>div.preloader {
             animation: hidePreloader .5s linear .5s forwards;
         }
+        .costom-caption {
+            position: initial;
+            color: rgba(78, 77, 77, 0.856);
+            text-align: center;
+            font-size: 1.1rem;
+            font-style: italic;
+            font-weight: bold;
+            line-height: 1.8rem
+        }
+        .seprator {
+            height: 2px;
+            width: 56px;
+            background-color: #034987;
+            margin: 7px 0 10px 0;
+        }
+        .img-cap {
+            font-style: normal;
+            font-size: 1rem;
+            margin-top: 0.5rem
+        }
     </style>
     <script>
         window.addEventListener("load", function() {
@@ -66,8 +86,11 @@
     <link rel="stylesheet" href="{{asset('assets/libs/@fortawesome/fontawesome-free/css/all.min.css')}}">
     <!-- Quick CSS -->
     <link rel="stylesheet" href="{{asset('assets/css/quick-website.css')}}" id="stylesheet">
+    <link rel="stylesheet" href="{{asset('assets/libs/swiper/dist/css/swiper.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css')}}">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    @yield('style')
 </head>
 
 <body>
@@ -118,27 +141,27 @@
                     <ul class="navbar-nav ml-lg-auto">
                         <!-- Overview -->
                         <li class="nav-item nav-item-spaced d-none d-lg-block">
-                            <a class="nav-link {{url()->current() == route('front.index') ? 'active':''}}" [routerLink]="['']">
+                            <a class="nav-link {{url()->current() == route('front.index') ? 'active':''}}" href="{{route('front.index')}}">
                                 Accueil
                             </a>
                         </li>
                         <li class="nav-item nav-item-spaced d-none d-lg-block">
-                            <a class="nav-link" [routerLink]="['/qui-sommes-nous']">
-                                Qui sommes-nons ?
+                            <a class="nav-link {{url()->current() == route('front.quisommesnous') ? 'active':''}}" href="{{route('front.quisommesnous')}}">
+                                Qui sommes-nous ?
                             </a>
                         </li>
                         <li class="nav-item nav-item-spaced d-none d-lg-block">
-                            <a class="nav-link" [routerLink]="['/notre-blog']">
+                            <a class="nav-link {{url()->current() == route('front.actualites') ? 'active':''}}" href="{{route('front.actualites')}} ">
                                 Actualités
                             </a>
                         </li>
                         <li class="nav-item nav-item-spaced d-none d-lg-block">
-                            <a class="nav-link" [routerLink]="['/contact']">
+                            <a class="nav-link {{url()->current() == route('front.contact') ? 'active':''}}" href="{{route('front.contact')}}">
                                 Contact
                             </a>
                         </li>
                         <li class="nav-item nav-item-spaced d-none d-lg-block">
-                            <a class="nav-link" [routerLink]="['/foire-aux-questions']">
+                            <a class="nav-link {{url()->current() == route('front.faq') ? 'active':''}}" href="{{route('front.faq')}}">
                                 FAQ
                             </a>
                         </li>
@@ -148,13 +171,18 @@
                     <ul class="navbar-nav align-items-lg-center d-none d-lg-flex ml-lg-auto">
                         <!-- Auth -->
                         <li class="nav-item">
-                            <a class="nav-link" [routerLink]="['/inscrition']">
-                                Inscription
+                            <a class="nav-link {{url()->current() == route('front.inscription') ? 'active':''}}" href="{{route('front.inscription')}}">
+                                S'inscrire
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" [routerLink]="['/connexion']">
-                                Connexion
+                            <a class="nav-link {{url()->current() == route('front.inscription') ? 'active':''}}" href="{{route('front.connexion')}}">
+                                Se connecter
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" >
+                                <button class="btn btn-primary"><i class="fa fa-gift"></i> Faire un don</button>
                             </a>
                         </li>
                     </ul>
@@ -179,9 +207,9 @@
                     <div class="col-lg-12">
                         <div class="row align-items-center">
                             <div class="col-lg-7">
-                                <h3 class="text-secondary mb-2">Un Prêtre Vous Repond</h3>
+                                <h3 class="text-secondary mb-2">Un Prêtre vous répond</h3>
                                 <p class="lead mb-0 text-white opacity-8">
-                                    Un seul endroit pour aiguiser votre foi.
+                                    Le seul endroit pour affiner votre foi.
                                 </p>
                             </div>
                             <div class="col-lg-5 text-lg-right mt-4 mt-lg-0">
@@ -235,7 +263,7 @@
                         <h6 class="heading mb-3">Actualité</h6>
                         <ul class="list-unstyled">
                             <li><a href="#">Vie de l’Eglise </a></li>
-                            <li><a href="#">Se sujet du mois</a></li>
+                            <li><a href="#">Le sujet du mois</a></li>
                             <li><a href="#">Formation </a></li>
                         </ul>
                     </div>
@@ -298,6 +326,9 @@
 <script src="{{asset('assets/libs/in-view/dist/in-view.min.js')}}"></script>
 <script src="{{asset('assets/libs/sticky-kit/dist/sticky-kit.min.js')}}"></script>
 <script src="{{asset('assets/libs/imagesloaded/imagesloaded.pkgd.min.js')}}"></script>
+<script src="{{asset('assets/libs/swiper/dist/js/swiper.min.js')}}"></script>
+<script src="{{asset('assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js')}}"></script>
+<script src="{{asset('assets/libs/typed.js/lib/typed.min.js')}}"></script>
 <!-- Quick JS -->
 <script src="{{asset('assets/js/quick-website.js')}}"></script>
 <!-- Feather Icons -->
