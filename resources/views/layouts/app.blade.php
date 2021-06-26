@@ -170,16 +170,34 @@
                     <!-- Right navigation -->
                     <ul class="navbar-nav align-items-lg-center d-none d-lg-flex ml-lg-auto">
                         <!-- Auth -->
-                        <li class="nav-item">
-                            <a class="nav-link {{url()->current() == route('front.inscription') ? 'active':''}}" href="{{route('front.inscription')}}">
-                                S'inscrire
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link {{url()->current() == route('front.inscription') ? 'active':''}}" href="{{route('front.connexion')}}">
-                                Se connecter
-                            </a>
-                        </li>
+                        @if(auth()->check())
+                            <li class="nav-item">
+                                <a class="nav-link {{url()->current() == route('front.inscription') ? 'active':''}}" href="{{route('front.inscription')}}">
+                                    Mon compte
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    @csrf
+                                </form>
+                                <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                   document.getElementById('logout-form').submit();">
+                                    Déconnexion
+                                </a>
+                            </li>
+                        @else
+                            <li class="nav-item">
+                                <a class="nav-link {{url()->current() == route('front.inscription') ? 'active':''}}" href="{{route('front.inscription')}}">
+                                    S'inscrire
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link {{url()->current() == route('front.inscription') ? 'active':''}}" href="{{route('front.connexion')}}">
+                                    Se connecter
+                                </a>
+                            </li>
+                        @endif
+
                         <li class="nav-item">
                             <a class="nav-link" >
                                 <button class="btn btn-primary"><i class="fa fa-gift"></i> Faire un don</button>
