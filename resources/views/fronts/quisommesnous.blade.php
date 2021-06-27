@@ -92,7 +92,7 @@
                     <div class="row mt-3" style="background-color: #0e0b2b;">
                         <div class="col-lg-12 p-5">
                             <div class="bg-white p-1" style="border-radius: 5px">
-                                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" >
+                                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="10000">
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
                                             <div class="costom-caption p-2">
@@ -185,13 +185,14 @@
             <div class="row align-items-center" style="margin-top: 5em">
                 <div class="col-lg-5">
                     <h5 class="h5 lh-180  mb-5 text-justify">
-                        Nous sommes une famille de chrétiens, de tout âge, niveau, catégorie sociale et continent.
-                        Nous sommes aujourd'hui confrontés à plusieurs questions sur notre foi.
-                        Nous avons la chance inouïe d'avoir des prêtres bien formés à notre écoute pour
-                        dissiper nos doutes et nous orienter par des réponses claires, simples et convaincantes.
-                        Quelle lumière nouvelle ! Dans notre famille, on ne finit jamais de découvrir.
-                        Notre bonheur est immense d'être ici et surtout d'être rassuré.
-                        Rejoins-nous, vite, vite.
+                        Nous sommes une famille de chrétiens réunis pour avoir des réponses claires et
+                        simples aux multiples questions qui se posent à nous aujourd’hui. Nous avons
+                        la chance d’avoir avec nous des prêtres catholiques de différents horizons,
+                        disponibles par surcroît, pour répondre à toutes nos questions, vraiment toutes.
+                        Quelle merveille ! Plus que cela, avons des formations à des coûts qui défient toute imagination.
+                        La cerise sur le gâteau est la possibilité de prendre un rendez-vous et échanger directement
+                        avec un prêtre. Ici, on va de découvertes en découvertes.  Nous nous épanouissons vraiment ici,
+                        dans une ambiance parfois bon enfant, comme sur les réseaux sociaux. Nous sommes une famille, solidaire et heureuse.
                         <br>
                         <div style="text-align: right"> <a href="{{route('front.quisommesnous')}}" class="btn btn-primary text-white">Je m'inscris <i class="fa fa-arrow-alt-circle-right"></i> </a></div>
                     </h5>

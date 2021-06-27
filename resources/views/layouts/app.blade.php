@@ -82,7 +82,7 @@
         });
     </script>
     <!-- Favicon -->
-    <link rel="icon" href="{{asset('assets/img/brand/favicon.png')}}" type="image/png"><!-- Font Awesome -->
+    <link rel="icon" href="{{asset('assets/img/brand/logo-upvr.jpg')}}" type="image/png"><!-- Font Awesome -->
     <link rel="stylesheet" href="{{asset('assets/libs/@fortawesome/fontawesome-free/css/all.min.css')}}">
     <!-- Quick CSS -->
     <link rel="stylesheet" href="{{asset('assets/css/quick-website.css')}}" id="stylesheet">
@@ -123,7 +123,7 @@
             <div class="container">
                 <!-- Brand -->
                 <a class="" href="{{route('front.index')}}">
-                    <img alt="Image placeholder" src="{{asset('assets/img/brand/logo-upvr.jpg')}}" id="navbar-logo" width="50px" height="50px" style="border-radius:5px">
+                    <img alt="Image placeholder" src="{{asset('assets/img/brand/logo2.jpg')}}" id="navbar-logo" width="120px" height="60px" style="border-radius:5px">
                 </a>
                 <!-- Toggler -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main-collapse" aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -165,7 +165,6 @@
                                 FAQ
                             </a>
                         </li>
-
                     </ul>
                     <!-- Right navigation -->
                     <ul class="navbar-nav align-items-lg-center d-none d-lg-flex ml-lg-auto">
@@ -231,7 +230,7 @@
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <!-- Theme's logo -->
                         <a href="{{route('front.index')}}">
-                            <img alt="Image placeholder" src="{{asset('assets/img/brand/logo-upvr.jpg')}}" id="navbar-logo" width="80px" height="80px" style="border-radius:5px">
+                            <img alt="Image placeholder" src="{{asset('assets/img/brand/logo2.jpg')}}" id="navbar-logo" width="140px" height="80px" style="border-radius:5px">
                         </a>
                         <!-- Webpixels' mission -->
                         <p class="mt-4 text-sm opacity-8 pr-lg-4">Webpixels attempts to bring the best development experience to designers and developers by offering the tools needed for having a quick and solid start in most web projects.</p>
