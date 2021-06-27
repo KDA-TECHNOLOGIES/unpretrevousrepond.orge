@@ -13,12 +13,12 @@
                         </h1>
                         <!-- Text -->
                         <p class="lead text-white opacity-8">
-                            Inscrivez-vous vite sur un "Un prêtre vous répond" et profitez d'une multitude de questions réponses, prières, formations, conseils et écoute personnelle.
+                            Inscrivez-vous et profitez d'une multitude de questions réponses, prières, formations, conseils et écoute personnelle.
                         </p>
                         <!-- Buttons -->
                         <div class="mt-5">
-                            <a href="https://themes.getbootstrap.com/product/quick-website-ui-kit-2/" class="btn btn-primary btn-icon d-none d-lg-inline-block" target="_blank">Je m'inscris</a>
-                            <a href="#" class="btn btn-white btn-icon">
+                            <a href="{{route('register')}}" class="btn btn-primary btn-icon  d-lg-inline-block" >Je m'inscris</a>
+                            <a href="{{route('front.quisommesnous')}}" class="btn btn-white btn-icon">
                                 <span class="btn-inner--text">Je découvre</span><span class="btn-inner--icon">
                                     <i data-feather="arrow-right"></i>
                                 </span>
@@ -32,16 +32,16 @@
                             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img class="d-block w-100" src="assets/img/theme/light/slide1.jpg" style="border-radius: 10px" alt="First slide">
+                                        <img class="d-block w-100" src="{{asset('assets/img/theme/light/slide1.jpg')}}" style="border-radius: 10px" alt="First slide">
                                         <div class="carousel-caption d-none d-md-block">
 
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <img class="d-block w-100" src="assets/img/theme/light/slide2.jpg" style="border-radius: 10px" alt="Second slide">
+                                        <img class="d-block w-100" src="{{asset('assets/img/theme/light/slide2.jpg')}}" style="border-radius: 10px" alt="Second slide">
                                     </div>
                                     <div class="carousel-item">
-                                        <img class="d-block w-100" src="assets/img/theme/light/slide3.jpg" style="border-radius: 10px" alt="Third slide">
+                                        <img class="d-block w-100" src="{{asset('assets/img/theme/light/slide3.jpg')}}" style="border-radius: 10px" alt="Third slide">
                                     </div>
                                 </div>
                                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -53,9 +53,6 @@
                                     <span class="sr-only">Next</span>
                                 </a>
                             </div>
-                            <figure class="col-7 col-md-6 col-lg-5 px-0 position-absolute bottom-0 left-4 left-lg-n5 z-index-101 overflow-hidden" style="height: 420px;">
-                                <img alt="Image placeholder" src="assets/img/theme/light/speciment1.jpg" class="img-fluid rounded shadow">
-                            </figure>
                         </div>
                     </div>
                 </div>
@@ -493,13 +490,14 @@
             <div class="row align-items-center" style="margin-top: 5em">
                 <div class="col-lg-5">
                     <h5 class="h5 lh-180  mb-5 text-justify">
-                        Nous sommes une famille de chrétiens, de tout âge, niveau, catégorie sociale et continent.
-                        Nous sommes aujourd'hui confrontés à plusieurs questions sur notre foi.
-                        Nous avons la chance inouïe d'avoir des prêtres bien formés à notre écoute pour
-                        dissiper nos doutes et nous orienter par des réponses claires, simples et convaincantes.
-                        Quelle lumière nouvelle ! Dans notre famille, on ne finit jamais de découvrir.
-                        Notre bonheur est immense d'être ici et surtout d'être rassuré.
-                        Rejoins-nous, vite, vite.
+                        Nous sommes une famille de chrétiens réunis pour avoir des réponses claires et
+                        simples aux multiples questions qui se posent à nous aujourd’hui. Nous avons
+                        la chance d’avoir avec nous des prêtres catholiques de différents horizons,
+                        disponibles par surcroît, pour répondre à toutes nos questions, vraiment toutes.
+                        Quelle merveille ! Plus que cela, avons des formations à des coûts qui défient toute imagination.
+                        La cerise sur le gâteau est la possibilité de prendre un rendez-vous et échanger directement
+                        avec un prêtre. Ici, on va de découvertes en découvertes.  Nous nous épanouissons vraiment ici,
+                        dans une ambiance parfois bon enfant, comme sur les réseaux sociaux. Nous sommes une famille, solidaire et heureuse.
                         <br>
                        <div style="text-align: right"> <a href="{{route('front.quisommesnous')}}" class="btn btn-primary text-white">Je m'inscris <i class="fa fa-arrow-alt-circle-right"></i> </a></div>
                     </h5>
@@ -566,7 +564,14 @@
                     <h2 class=" mt-4">NOS FORMATIONS</h2>
                     <div class="mt-2">
                         <p class="lead lh-180 ">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dignissimos distinctio dolor eius eligendi, et labore laboriosam, minus odit, officia placeat quam repudiandae velit. Aliquid dolor excepturi fuga iusto quasi.
+                            Dans un monde où chacun a sa vérité et la communique à tout vent,
+                            Il est devenu, comme un impératif pour nous, de former
+                            les catholiques, les plus faibles surtout, devenus la proie
+                            facile des prédateurs. Cette formation va donc dans des domaines
+                            les plus ordinaires à ceux plus spécifiques. Pour ce faire,
+                            nous ouvrons des écoles « de base » pour les chrétiens ayant
+                            un niveau plat dans la connaissance de leur foi, le langage
+                            étant dépouillé de tout jargon technique.
                         </p>
                     </div>
                 </div>
@@ -583,9 +588,14 @@
                                 </div>
                             </div>
                             <div>
-                                <span class="h6">100% Responsive</span>
+                                <span class="h6">Grandir dans la prière</span>
                                 <p class="text-sm text-muted mb-0">
-                                    Built to be customized. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur corporis debitis dolore enim eos error illum, ipsum iste, neque non numquam obcaecati perferendis placeat quaerat reprehenderit sint temporibus. Autem, nesciunt!
+                                    Ici, nous apprendrons les différents types de prières catholiques
+                                    et leurs particularités : prière vocale, silencieuse,
+                                    la Lectio Divina, l’intercession, la louange… Comment atteindre
+                                    le silence intérieur, l’accueil de l’Esprit, etc. Nous recevrons une
+                                    formation approfondie sur deux prières spécifiques de l’Eglise :
+                                    la Liturgie des heures et la sainte messe.
                                 </p>
                             </div>
                         </div>
@@ -600,9 +610,14 @@
                                 </div>
                             </div>
                             <div>
-                                <span class="h6">Based on Bootstrap 4</span>
+                                <span class="h6">Mieux comprendre sa foi</span>
                                 <p class="text-sm text-muted mb-0">
-                                    Built to be customized. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at cum cupiditate dolore dolorem dolores fugiat ipsa magnam maiores mollitia obcaecati perferendis porro praesentium provident ut, veniam vero voluptate voluptatem.
+                                    Nous donnerons les généralités sur la foi catholique et nous nous
+                                    intéresserons aux 12 articles de notre foi.
+                                    Nous irons plus en détails sur l’histoire de chaque article et
+                                    les problèmes que l’on rencontre aujourd’hui. A terme,
+                                    le chrétien obtiendra les armes pour se défendre de toutes
+                                    les attaques contre sa foi. Il pourra l’expliquer avec aisance.
                                 </p>
                             </div>
                         </div>
@@ -617,9 +632,15 @@
                                 </div>
                             </div>
                             <div>
-                                <span class="h6">Built with SASS</span>
+                                <span class="h6">Se marier et s’épanouir dans le mariage</span>
                                 <p class="text-sm text-muted mb-0">
-                                    Built to be customized. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, aspernatur aut dignissimos, dolore, inventore iste iusto molestiae nulla perspiciatis porro sequi tenetur? Animi, nulla, tempora. Aperiam assumenda nisi praesentium vero.
+                                    Les divorces suivis de regret se multiplient. Cette formation
+                                    s’occupera d’infléchir la tendance pour une vie de couple harmonieuse.
+                                    La formation partira du choix de se marier jusqu’à la vie en couple :
+                                    Comment savoir si on est appelé à se marier, comment fixer les critères
+                                    de choix, le contenu des rencontres entre futurs époux, les fiançailles,
+                                    le mariage (aspect juridique, canonique, pratique), la vie en couple et
+                                    formation permanente. Rien ne sera laissé sous-mains.
                                 </p>
                             </div>
                         </div>
@@ -635,9 +656,14 @@
                                 </div>
                             </div>
                             <div>
-                                <span class="h6">100+ custom components</span>
+                                <span class="h6">Discernement vocationnel</span>
                                 <p class="text-sm text-muted mb-0">
-                                    Built to be customized. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque natus optio perferendis. Aliquid consequuntur debitis doloribus eos eum eveniet expedita laborum molestiae non, possimus quam repellendus sit veniam voluptatum?
+                                    Sans en avoir l’air, c’est le plus important pour
+                                    s’orienter dans la vie. Comment savoir que l’on est
+                                    appelé à faire ceci ou cela ? Comment faire un choix
+                                    entre plusieurs possibilités ? Quels sont les éléments
+                                    d’un bon discernement ? Comment acquérir le discernement.
+                                    C’est de loin l’une des plus grandes aspirations des jeunes aujourd’hui.
                                 </p>
                             </div>
                         </div>
@@ -654,9 +680,15 @@
                                 </div>
                             </div>
                             <div>
-                                <span class="h6">Cool widgets</span>
+                                <span class="h6">Spiritualité et psychologie</span>
                                 <p class="text-sm text-muted mb-0">
-                                    Built to be customized. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ipsam numquam quia quibusdam rem voluptates? Distinctio magnam modi nostrum praesentium! Aspernatur, cupiditate enim facilis impedit non perspiciatis sequi tempora ullam?
+                                    Une lacune urgente à combler chez la majorité des catholiques
+                                    est leur ignorance de la Bible. Ici, nous vous introduirons à
+                                    la connaissance de la Bible et vous fournirons les bases
+                                    d’interprétation correcte des textes bibliques. Avec cette
+                                    formation, le chrétien peut avoir un point de vue rigoureux
+                                    et proposer sa signification à ceux qui abusent de son ignorance.
+                                    C’est une étude fondamentale et incontournable.
                                 </p>
                             </div>
                         </div>
@@ -671,9 +703,17 @@
                                 </div>
                             </div>
                             <div>
-                                <span class="h6">Bootstrap Flexbox Grid</span>
+                                <span class="h6">Théologie pour les nuls</span>
                                 <p class="text-sm text-muted mb-0">
-                                    Built to be customized. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aspernatur, eius id, impedit ipsam maiores minus molestiae nobis nostrum repellat repellendus similique? At dolore earum, harum maxime perspiciatis recusandae tenetur?
+                                    Ici, nous nous intéressons aux dogmes de
+                                    l’Eglise. Sa pensée sur Dieu, le Christ, l’Esprit,
+                                    l’Eglise, la Vierge Marie, le Péché, la Grâce,
+                                    les sacrements, l’Au-dela, etc. Nous saurons
+                                    l’histoire de ces dogmes et les objections qu’on
+                                    leur oppose aujourd’hui. A la fin de la formation,
+                                    le chrétien aura une idée claire des grandes lignes
+                                    de la doctrine catholique et possédera les armes pour
+                                    une foi plus facile à assumer et à expliquer.
                                 </p>
                             </div>
                         </div>
@@ -691,9 +731,9 @@
                                 </div>
                             </div>
                             <div>
-                                <span class="h6">Premium SVG icons</span>
+                                <span class="h6">Morale pour les nuls</span>
                                 <p class="text-sm text-muted mb-0">
-                                    Built to be customized. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias animi assumenda atque consequatur deserunt doloribus ducimus enim esse, exercitationem modi molestias nisi odit officiis possimus, quaerat repellat temporibus voluptatem.
+                                    Le pape vient de publier un « Motu Proprio » qui institue le ministère du catéchiste. C’est dire leur importance dans la vie de l’Eglise. Ils ont besoin d’une formation à la taille de leur engagement. Ici, il sera question de l’histoire du catéchisme, de la personne du catéchiste, du catéchiste en situation de classe, des connaissances requises pour son ministère, de sa foi et de son agir dans le monde, des grands débats actuels sur lesquels ils se doivent d’être avertis avant d’aller en classe. C’est dire l’immensité de la tâche et l’irremplaçable place de cette formation pour qui est catéchiste ou qui prétend l’être. Vous serez à l’aise ici.
                                 </p>
                             </div>
                         </div>
@@ -710,9 +750,9 @@
                                 </div>
                             </div>
                             <div>
-                                <span class="h6">Integrated plugins</span>
+                                <span class="h6">Formation des enfants catholiques</span>
                                 <p class="text-sm text-muted mb-0">
-                                    Built to be customized. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci asperiores at dignissimos eligendi quae quibusdam unde veritatis vero voluptatem voluptatum. Animi debitis neque porro repellat vitae? Amet maxime veritatis voluptatem!
+                                    C’est un âge névralgique de la vie. Nos comportements d’aujourd’hui sont le reflet des images imprimées dans notre esprit dès notre enfance. Ici, le parent trouvera l’essentiel de ce qu’il lui faut pour ne pas louper le tournant. Donner Dieu à un enfant. Et tout le reste ira de soi. Comment y parvenir, suivant les différentes étapes de son évolution ? C’est l’objectif de cette classe.
                                 </p>
                             </div>
                         </div>
@@ -729,9 +769,9 @@
                                 </div>
                             </div>
                             <div>
-                                <span class="h6">Smart HTML markup</span>
+                                <span class="h6">Couple en attente d’enfants </span>
                                 <p class="text-sm text-muted mb-0">
-                                    Built to be customized. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur assumenda doloremque et illo incidunt itaque magni nostrum sed, similique totam! Deserunt et illo maxime minus quas? Praesentium quae quidem reprehenderit!
+                                    Accompagnement, prière, formation et santé.
                                 </p>
                             </div>
                         </div>
@@ -788,25 +828,43 @@
                     <h2 class=" mt-4">NOS ABONNEMENTS</h2>
                     <div class="mt-2">
                         <p class="lead lh-180">
-                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda at cumque doloribus excepturi, iste mollitia natus praesentium quia similique sit soluta sunt veritatis. Facere libero minus nam ullam voluptatibus.</span><span>Ab asperiores distinctio dolore dolorem earum enim fugit hic illo iste, itaque libero magnam magni mollitia nihil non nulla optio quis quo reiciendis ullam. Deserunt et exercitationem fugit perferendis perspiciatis.</span>
+                            Nous avons trois packages pour l’abonnement.
+                            Package light : donnant droit au blog, à la question du jour, au commentaire de l’Evangile du jour, à la vie des saints.
+                            Package green :  donnant droit à tout le package Light + toutes les prières disponibles selon le temps.
+                            Package Gold :  donnant droit à tout le Package Green + sollicitation d’un échange personnel avec un prêtre. Le prêtre pourrait vous orienter vers une personne spécialisée selon le contenu de l’échange. A noter : nous ne faisons ni confession, ni direction spirituelle.
+
                         </p>
                     </div>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-4 col-md">
-                    <div class="card card-pricing bg-success  text-center px-3 border-0 hover-scale-110">
+                    <div class="card card-pricing   text-center px-3 border-0 hover-scale-110">
                         <div class="card-header py-5 border-0 delimiter-bottom">
-                            <div class="h1  text-center mb-0">$<span class="price font-weight-bolder">590</span></div>
+                            <div class="h1  text-center mb-0">$<span class="price font-weight-bolder">0</span></div>
                             <span class="h6 ">LIGTH</span>
                         </div>
                         <div class="card-body">
                             <ul class="list-unstyled  text-sm opacity-8 mb-4">
-                                <li>1 end product</li>
-                                <li>Use for personal or a client</li>
-                                <li>Use in a free end product</li>
-                                <li>Use in an end product that is <strong class="text-success text-underline--dashed">sold</strong></li>
-                                <li>6 months technical support</li>
+                                <li>blog, à la question du jour</li>
+                                <li>au commentaire de l’Evangile du jour</li>
+                                <li>à la vie des saints.</li>
+                            </ul>
+                            <a href="#" class="btn btn-sm btn-white hover-translate-y-n3 hover-shadow-lg mb-3">Je m'abonne.</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md">
+                    <div class="card card-pricing bg-gradient-green text-center px-3 border-0 hover-scale-110">
+                        <div class="card-header py-5 border-0 delimiter-bottom">
+                            <div class="h1  text-center mb-0">$<span class="price font-weight-bolder">1</span></div>
+                            <span class="h6 ">Green</span>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled  text-sm opacity-8 mb-4">
+                                <li>tout le package Light</li>
+                                <li>toutes les prières disponibles</li>
+                                <li>Support personnalisé</li>
                             </ul>
                             <a href="https://themes.getbootstrap.com/product/quick-website-ui-kit-2/" class="btn btn-sm btn-white hover-translate-y-n3 hover-shadow-lg mb-3" target="_blank">Purchase now</a>
                         </div>
@@ -815,34 +873,14 @@
                 <div class="col-lg-4 col-md">
                     <div class="card card-pricing bg-gradient-orange text-center px-3 border-0 hover-scale-110">
                         <div class="card-header py-5 border-0 delimiter-bottom">
-                            <div class="h1  text-center mb-0">$<span class="price font-weight-bolder">590</span></div>
-                            <span class="h6 ">GOLD</span>
-                        </div>
-                        <div class="card-body">
-                            <ul class="list-unstyled  text-sm opacity-8 mb-4">
-                                <li>1 end product</li>
-                                <li>Use for personal or a client</li>
-                                <li>Use in a free end product</li>
-                                <li>Use in an end product that is <strong class="text-success text-underline--dashed">sold</strong></li>
-                                <li>6 months technical support</li>
-                            </ul>
-                            <a href="https://themes.getbootstrap.com/product/quick-website-ui-kit-2/" class="btn btn-sm btn-white hover-translate-y-n3 hover-shadow-lg mb-3" target="_blank">Purchase now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md">
-                    <div class="card card-pricing bg-primary text-center px-3 border-0 hover-scale-110">
-                        <div class="card-header py-5 border-0 delimiter-bottom">
-                            <div class="h1 text-white text-center mb-0">$<span class="price font-weight-bolder">590</span></div>
-                            <span class="h6 text-white">Extended License</span>
+                            <div class="h1 text-white text-center mb-0">$<span class="price font-weight-bolder">2</span></div>
+                            <span class="h6 text-white">Gold</span>
                         </div>
                         <div class="card-body">
                             <ul class="list-unstyled text-white text-sm opacity-8 mb-4">
-                                <li>1 end product</li>
-                                <li>Use for personal or a client</li>
-                                <li>Use in a free end product</li>
-                                <li>Use in an end product that is <strong class="text-success text-underline--dashed">sold</strong></li>
-                                <li>6 months technical support</li>
+                                <li>tout le Package Green</li>
+                                <li>sollicitation d’un échange avec un prêtre</li>
+                                <li>Coaching</li>
                             </ul>
                             <a href="https://themes.getbootstrap.com/product/quick-website-ui-kit-2/" class="btn btn-sm btn-white hover-translate-y-n3 hover-shadow-lg mb-3" target="_blank">Purchase now</a>
                         </div>
@@ -851,6 +889,9 @@
             </div>
             <div class="mt-4 text-center">
                 <p class="mb-2">
+                    Mis à part nos Packages, toutes nos formations sont à 5 dollars par classe. Beaucoup ! N’est-ce pas ? Mais rassurez-vous que vous ne verrez cela nulle part ailleurs qu’ici. Notre désir est que le maximum s’inscrive pour recevoir les formations. Raison pour laquelle les frais d’inscription et d’abonnement sont au rabais.
+                </p>
+                <p>
                     Pour des renseignements complémentaires, veuillez nous contacter.
                 </p>
                 <a href="https://webpixels.io" class="text-primary text-underline--dashed" >Contactez nous<i data-feather="arrow-right" class="ml-2"></i></a>
