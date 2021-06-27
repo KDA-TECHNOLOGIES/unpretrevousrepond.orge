@@ -45,7 +45,7 @@
                         <div class="col-11 col-lg-10 col-xl-6">
                             <div>
                                 <div class="mb-1 text-center">
-                                    <img alt="Image placeholder" src="{{asset('assets/img/brand/logo2.jpg')}}" id="navbar-logo" width="80px" height="80px" style="border-radius:5px">
+                                    <img alt="Image placeholder" src="{{asset('assets/img/brand/logo2.jpg')}}" id="navbar-logo" width="110px" height="60px" style="border-radius:5px">
                                     <h6 class="h3 mb-1 text-center">Bienvenue</h6>
                                     <p class="text-muted mb-0 text-center">Connectez-vous à votre compte pour continuer.</p>
                                 </div>
