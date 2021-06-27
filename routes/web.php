@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use \App\Http\Controllers\Front\FrontController;
 use \App\Http\Controllers\Auth\RegisterController;
+use \App\Http\Controllers\Auth\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,7 +29,8 @@ Route::get('qui-sommes-nous',[FrontController::class,'quisommesnous'])->name('fr
 Route::get('contactez-nous',[FrontController::class,'contact'])->name('front.contact');
 Route::get('notre-blog',[FrontController::class,'actualites'])->name('front.actualites');
 Route::get('foire-aux-questions',[FrontController::class,'faq'])->name('front.faq');
-Route::get('connexion',[FrontController::class,'connexion'])->name('front.connexion');
+Route::get('connexion',[LoginController::class,'showLoginForm'])->name('front.connexion');
+Route::post('connexion',[LoginController::class,'login'])->name('front.post.connexion');
 Route::get('inscription',[RegisterController::class,'showRegistrationForm'])->name('front.inscription');
 Route::post('inscription',[RegisterController::class,'register'])->name('front.post.inscription');
 
