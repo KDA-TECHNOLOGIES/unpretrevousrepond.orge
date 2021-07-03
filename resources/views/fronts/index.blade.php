@@ -567,7 +567,7 @@
                             Dans un monde où chacun a sa vérité et la communique à tout vent,
                             Il est devenu, comme un impératif pour nous, de former
                             les catholiques, les plus faibles surtout, devenus la proie
-                            facile des prédateurs. Cette formation va donc dans des domaines
+                            facile des prédateurs. Cette formation va donc des domaines
                             les plus ordinaires à ceux plus spécifiques. Pour ce faire,
                             nous ouvrons des écoles « de base » pour les chrétiens ayant
                             un niveau plat dans la connaissance de leur foi, le langage
@@ -838,13 +838,13 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-lg-4 col-md">
-                    <div class="card card-pricing   text-center px-3 border-0 hover-scale-110">
+                <div class="col-lg-3 col-md">
+                    <div class="card card-pricing bg-gray  text-white text-center px-3 border-0 hover-scale-110">
                         <div class="card-header py-5 border-0 delimiter-bottom">
                             <div class="h1  text-center mb-0">$<span class="price font-weight-bolder">0</span></div>
                             <span class="h6 ">LIGTH</span>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body text-white">
                             <ul class="list-unstyled  text-sm opacity-8 mb-4">
                                 <li>blog, à la question du jour</li>
                                 <li>au commentaire de l’Evangile du jour</li>
@@ -854,11 +854,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md">
-                    <div class="card card-pricing bg-gradient-green text-center px-3 border-0 hover-scale-110">
+                <div class="col-lg-3 col-md">
+                    <div class="card card-pricing bg-gradient-green text-white text-center px-3 border-0 hover-scale-110">
                         <div class="card-header py-5 border-0 delimiter-bottom">
                             <div class="h1  text-center mb-0">$<span class="price font-weight-bolder">1</span></div>
-                            <span class="h6 ">Green</span>
+                            <span class="h6 ">GREEN</span>
                         </div>
                         <div class="card-body">
                             <ul class="list-unstyled  text-sm opacity-8 mb-4">
@@ -870,11 +870,27 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md">
+                <div class="col-lg-3 col-md">
                     <div class="card card-pricing bg-gradient-orange text-center px-3 border-0 hover-scale-110">
                         <div class="card-header py-5 border-0 delimiter-bottom">
                             <div class="h1 text-white text-center mb-0">$<span class="price font-weight-bolder">2</span></div>
-                            <span class="h6 text-white">Gold</span>
+                            <span class="h6 text-white">GOLD</span>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled text-white text-sm opacity-8 mb-4">
+                                <li>tout le Package Green</li>
+                                <li>sollicitation d’un échange avec un prêtre</li>
+                                <li>Coaching</li>
+                            </ul>
+                            <a href="https://themes.getbootstrap.com/product/quick-website-ui-kit-2/" class="btn btn-sm btn-white hover-translate-y-n3 hover-shadow-lg mb-3" target="_blank">Purchase now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md">
+                    <div class="card card-pricing bg-primary text-center px-3 border-0 hover-scale-110">
+                        <div class="card-header py-5 border-0 delimiter-bottom">
+                            <div class="h1 text-white text-center mb-0">$<span class="price font-weight-bolder">5</span></div>
+                            <span class="h6 text-white">BLUE</span>
                         </div>
                         <div class="card-body">
                             <ul class="list-unstyled text-white text-sm opacity-8 mb-4">
