@@ -113,10 +113,15 @@
                             </div>
                         </div>
                     </div>
-
+                    @if(session('login-success'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('login-success') }}
+                        </div>
+                    @endif
                     <question-post-component></question-post-component>
-
-                    <question-component></question-component>
+                    @for($i = 0; $i<4; $i++)
+                        <question-component></question-component>
+                    @endfor
 
 
                 </div>

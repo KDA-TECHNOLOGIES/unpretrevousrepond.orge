@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{{asset('comptes/css/themify-icons.css')}} ">
     <link rel="stylesheet" href="{{asset('comptes/css/feather.css')}}">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('assets/img/brand/logo-upvr.jpg')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('assets/img/brand/logo3.png')}}">
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="{{asset('comptes/css/style.css')}}">
 
@@ -21,17 +21,6 @@
 
 
 <div class="main-wrapper">
-
-    <!-- navigation top-->
-    <div class="nav-header bg-white shadow-xs border-0">
-        <div class="nav-top">
-            <a href="{{route('front.index')}}"><img src="{{asset('assets/img/brand/logo-upvr.jpg')}}" width="50px" height="50px" alt=""> <span class="d-inline-block fredoka-font   text-current logo-text mb-0"> Un prêtre vous répond. </span> </a>
-        </div>
-    </div>
-    <!-- navigation top -->
-
-
-
     <!-- main content -->
     <div class="main-content pt-0 bg-white ps-0 pe-0">
         @yield('content')

@@ -2,10 +2,14 @@
 
 namespace App\Models;
 
+use App\Mail\AddressMailVerication;
+use App\Mail\RecuperationMotDePasse;
+use App\Notifications\CustomVerifyMail;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Facades\Mail;
 
 class User extends Authenticatable implements MustVerifyEmail
 {
@@ -20,6 +24,7 @@ class User extends Authenticatable implements MustVerifyEmail
         'name',
         'email',
         'password',
+        'personne_id'
     ];
 
     /**
@@ -40,4 +45,13 @@ class User extends Authenticatable implements MustVerifyEmail
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    public function sendEmailVerificationNotification()
+    {
+        Mail::to($this)->send(new AddressMailVerication($this));
+    }
+    public function sendPasswordResetNotification($token)
+    {
+        $url = route('password.reset',['token'=>$token]);
+        Mail::to($this)->send(new RecuperationMotDePasse($this,$url));
+    }
 }

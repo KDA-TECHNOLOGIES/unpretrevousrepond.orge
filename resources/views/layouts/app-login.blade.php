@@ -82,7 +82,7 @@
         });
     </script>
     <!-- Favicon -->
-    <link rel="icon" href="{{asset('assets/img/brand/favicon.png')}}" type="image/png"><!-- Font Awesome -->
+    <link rel="icon" href="{{asset('assets/img/brand/logo3.png')}}" type="image/png"><!-- Font Awesome -->
     <link rel="stylesheet" href="{{asset('assets/libs/@fortawesome/fontawesome-free/css/all.min.css')}}">
     <!-- Quick CSS -->
     <link rel="stylesheet" href="{{asset('assets/css/quick-website.css')}}" id="stylesheet">

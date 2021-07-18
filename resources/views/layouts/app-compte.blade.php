@@ -19,7 +19,7 @@
 
 </head>
 
-<body class="color-theme-blue mont-font">
+<body class="color-theme-blue mont-font theme-dark">
 
 <div class="preloader"></div>
 
@@ -27,11 +27,11 @@
     <!-- navigation top-->
     <div class="nav-header bg-white shadow-xs border-0">
         <div class="nav-top">
-            <a href="default.html">
-                <img alt="Image placeholder" src="{{asset('assets/img/brand/logo3.png')}}" id="navbar-logo" width="60px" height="60px" style="border-radius:5px">
+            <a href="{{route('compte.index')}}">
+                <img alt="Image placeholder" src="{{asset('assets/img/brand/logo2.jpg')}}" id="navbar-logo" width="120px" height="60px" style="border-radius:5px" style="border-radius:5px">
             </a>
             <a href="#" class="mob-menu ms-auto me-2 chat-active-btn"><i class="feather-message-circle text-grey-900 font-sm btn-round-md bg-greylight"></i></a>
-            <a href="default-video.html" class="mob-menu me-2"><i class="feather-video text-grey-900 font-sm btn-round-md bg-greylight"></i></a>
+            <a href="#" class="mob-menu me-2"><i class="feather-video text-grey-900 font-sm btn-round-md bg-greylight"></i></a>
             <a href="#" class="me-2 menu-search-icon mob-menu"><i class="feather-search text-grey-900 font-sm btn-round-md bg-greylight"></i></a>
             <button class="nav-menu me-0 ms-2"></button>
         </div>
@@ -42,11 +42,11 @@
                 <input type="text" placeholder="Start typing to search.." class="bg-grey border-0 lh-32 pt-2 pb-2 ps-5 pe-3 font-xssss fw-500 rounded-xl w350 theme-dark-bg">
             </div>
         </form>
-        <a href="default.html" class="p-2 text-center ms-3 menu-icon center-menu-icon"><i class="feather-home font-lg alert-primary btn-round-lg theme-dark-bg text-current "></i></a>
-        <a href="default-storie.html" class="p-2 text-center ms-0 menu-icon center-menu-icon"><i class="feather-zap font-lg bg-greylight btn-round-lg theme-dark-bg text-grey-500 "></i></a>
-        <a href="default-video.html" class="p-2 text-center ms-0 menu-icon center-menu-icon"><i class="feather-video font-lg bg-greylight btn-round-lg theme-dark-bg text-grey-500 "></i></a>
-        <a href="default-group.html" class="p-2 text-center ms-0 menu-icon center-menu-icon"><i class="feather-user font-lg bg-greylight btn-round-lg theme-dark-bg text-grey-500 "></i></a>
-        <a href="shop-2.html" class="p-2 text-center ms-0 menu-icon center-menu-icon"><i class="feather-shopping-bag font-lg bg-greylight btn-round-lg theme-dark-bg text-grey-500 "></i></a>
+        <a href="#" class="p-2 text-center ms-3 menu-icon center-menu-icon"><i class="feather-home font-lg alert-primary btn-round-lg theme-dark-bg text-current "></i></a>
+        <a href="#" class="p-2 text-center ms-0 menu-icon center-menu-icon"><i class="feather-zap font-lg bg-greylight btn-round-lg theme-dark-bg text-grey-500 "></i></a>
+        <a href="#" class="p-2 text-center ms-0 menu-icon center-menu-icon"><i class="feather-video font-lg bg-greylight btn-round-lg theme-dark-bg text-grey-500 "></i></a>
+        <a href="#" class="p-2 text-center ms-0 menu-icon center-menu-icon"><i class="feather-user font-lg bg-greylight btn-round-lg theme-dark-bg text-grey-500 "></i></a>
+        <a href="#" class="p-2 text-center ms-0 menu-icon center-menu-icon"><i class="feather-shopping-bag font-lg bg-greylight btn-round-lg theme-dark-bg text-grey-500 "></i></a>
 
         <a href="#" class="p-2 text-center ms-auto menu-icon" id="dropdownMenu3" data-bs-toggle="dropdown" aria-expanded="false"><span class="dot-count bg-warning"></span><i class="feather-bell font-xl text-current"></i></a>
         <div class="dropdown-menu dropdown-menu-end p-4 rounded-3 border-0 shadow-lg" aria-labelledby="dropdownMenu3">
@@ -191,30 +191,30 @@
                     <div class="nav-caption fw-600 font-xssss text-grey-500"><span>Compte</span></div>
                     <ul class="mb-1 top-content">
                         <li class="logo d-none d-xl-block d-lg-block"></li>
-                        <li><a href="#" class="nav-content-bttn open-font" ><img src="{{asset('comptes/images/profils/arnaudex/speciment-profil.png')}}" class="card-profile rounded-circle" width="50px" height="50px" alt="">&nbsp; <span>Arnauld KANHONOU</span></a></li>
-                        <li><a href="default-badge.html" class="nav-content-bttn open-font" ><i class="feather-award btn-round-md bg-red-gradiant me-3"></i><span>Mes frère en Christ</span></a></li>
-                        <li><a href="default-storie.html" class="nav-content-bttn open-font" ><img src="{{asset('comptes/images/profils/arnaudex/speciment-profil.png')}}" class="card-profile rounded-circle" width="50px" height="50px" alt="">&nbsp;<span>Mes groupes de prière</span></a></li>
-                        <li><a href="default-group.html" class="nav-content-bttn open-font" ><i class="feather-zap btn-round-md bg-mini-gradiant me-3"></i><span>Mon agenda</span></a></li>
-                        <li><a href="user-page.html" class="nav-content-bttn open-font"><i class="feather-user btn-round-md bg-primary-gradiant me-3"></i><span>Mon profil </span></a></li>
+                        <li><a href="{{route('compte.index')}}" class="nav-content-bttn open-font" ><img src="{{asset('comptes/images/profils/arnaudex/speciment-profil.png')}}" class="card-profile rounded-circle" width="50px" height="50px" alt="">&nbsp; &nbsp;<span>{{\Illuminate\Support\Facades\Auth::user()->name}}</span></a></li>
+                        <li><a href="{{route('compte.freresenchrist')}}" class="nav-content-bttn open-font" ><img src="{{asset('comptes/images/profils/arnaudex/speciment-profil.png')}}" class="card-profile rounded-circle" width="50px" height="50px" alt="">&nbsp; &nbsp;<span>Mes rélations en Christ</span></a></li>
+                        <li><a href="{{route('compte.groupesdepriere')}}" class="nav-content-bttn open-font" ><img src="{{asset('comptes/images/profils/arnaudex/speciment-profil.png')}}" class="card-profile rounded-circle" width="50px" height="50px" alt="">&nbsp; &nbsp;<span>Mes groupes de prière</span></a></li>
+                        <li><a href="{{route('compte.monagenda')}}" class="nav-content-bttn open-font" ><i class="feather-zap btn-round-md bg-mini-gradiant me-3"></i><span>Mon agenda</span></a></li>
+                        <li><a href="{{route('compte.profilmembre')}}" class="nav-content-bttn open-font"><i class="feather-user btn-round-md bg-primary-gradiant me-3"></i><span>Mon profil </span></a></li>
                     </ul>
                 </div>
                 <div class="nav-wrap bg-white bg-transparent-card rounded-xxl shadow-xss pt-3 pb-1 mb-2">
                     <div class="nav-caption fw-600 font-xssss text-grey-500"><span>Spiritualité </span></div>
                     <ul class="mb-3">
-                        <li><a href="default-hotel.html" class="nav-content-bttn open-font"><i class="font-xl text-current feather-home me-3"></i><span>Prières diverses</span></a></li>
-                        <li><a href="default-event.html" class="nav-content-bttn open-font"><i class="font-xl text-current feather-map-pin me-3"></i><span>Parole expliquée</span></a></li>
-                        <li><a href="default-live-stream.html" class="nav-content-bttn open-font"><i class="font-xl text-current feather-youtube me-3"></i><span>Vie des Saints</span></a></li>
-                        <li><a href="default-live-stream.html" class="nav-content-bttn open-font"><i class="font-xl text-current feather-youtube me-3"></i><span>Témoignages</span></a></li>
-                        <li><a href="default-live-stream.html" class="nav-content-bttn open-font"><i class="font-xl text-current feather-youtube me-3"></i><span>Mon agenda spirituel</span></a></li>
+                        <li><a href="{{route('compte.prieres')}}" class="nav-content-bttn open-font"><i class="font-xl text-current feather-home me-3"></i><span>Prières diverses</span></a></li>
+                        <li><a href="" class="nav-content-bttn open-font"><i class="font-xl text-current feather-map-pin me-3"></i><span>Parole expliquée</span></a></li>
+                        <li><a href="{{route('compte.viedessaints')}}" class="nav-content-bttn open-font"><i class="font-xl text-current feather-youtube me-3"></i><span>Vie des Saints</span></a></li>
+                        <li><a href="#" class="nav-content-bttn open-font"><i class="font-xl text-current feather-youtube me-3"></i><span>Témoignages</span></a></li>
+                        <li><a href="{{route('compte.agendaspirituel')}}" class="nav-content-bttn open-font"><i class="font-xl text-current feather-youtube me-3"></i><span>Mon agenda spirituel</span></a></li>
                     </ul>
                 </div>
 
-                <div class="nav-wrap bg-white bg-transparent-card rounded-xxl shadow-xss pt-3 pb-1">
-                    <div class="nav-caption fw-600 font-xssss text-grey-500"><span></span> Configuration</div>
-                    <ul class="mb-1">
-                        <li class="logo  d-xl-block d-lg-block"></li>
-                        <li><a href="default-settings.html" class="nav-content-bttn open-font h-auto pt-2 pb-2"><i class="font-sm feather-settings me-3 text-grey-500"></i><span>Paramétrage</span></a></li>
-                        <li><a href="default-message.html" class="nav-content-bttn open-font h-auto pt-2 pb-2"><i class="font-sm feather-message-square me-3 text-grey-500"></i><span>Discussion</span><span class="circle-count bg-warning mt-0">23</span></a></li>
+                <div class="nav-wrap bg-white bg-transparent-card rounded-xxl shadow-xss pt-3  ">
+                    <div class="nav-caption fw-600 font-xssss text-grey-500"><span>Formations </span></div>
+                    <ul class="mb-3">
+                        <li><a href="default-hotel.html" class="nav-content-bttn open-font"><i class="font-xl text-current feather-home me-3"></i><span>Nos thématiques</span></a></li>
+                        <li><a href="default-event.html" class="nav-content-bttn open-font"><i class="font-xl text-current feather-map-pin me-3"></i><span>Nos écoles</span></a></li>
+                        <li><a href="default-live-stream.html" class="nav-content-bttn open-font"><i class="font-xl text-current feather-youtube me-3"></i><span>Vie des Saints</span></a></li>
                     </ul>
                 </div>
             </div>

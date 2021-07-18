@@ -11,8 +11,8 @@
 
     <title>{{ config('app.name', 'UPVR') }}</title>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <!-- Scripts
+    <script src="{{ asset('js/app.js') }}" defer></script>-->
     <!-- Preloader -->
     <style>
         @keyframes hidePreloader {
@@ -82,8 +82,9 @@
         });
     </script>
     <!-- Favicon -->
-    <link rel="icon" href="{{asset('assets/img/brand/logo-upvr.jpg')}}" type="image/png"><!-- Font Awesome -->
+    <link rel="icon" href="{{asset('assets/img/brand/logo3.jpg')}}" type="image/png"><!-- Font Awesome -->
     <link rel="stylesheet" href="{{asset('assets/libs/@fortawesome/fontawesome-free/css/all.min.css')}}">
+
     <!-- Quick CSS -->
     <link rel="stylesheet" href="{{asset('assets/css/quick-website.css')}}" id="stylesheet">
     <link rel="stylesheet" href="{{asset('assets/libs/swiper/dist/css/swiper.min.css')}}">
@@ -111,7 +112,7 @@
                     </p>
                     <!-- Buttons -->
                     <a href="pages/utility/terms.html" class="btn btn-sm btn-white" target="_blank">Learn more</a>
-                    <button type="button" class="btn btn-sm btn-primary mr-2" data-dismiss="modal">OK</button>
+                    <button type="button" class="btn btn-sm btn-primary mr-2" onclick="" data-dismiss="modal">OK</button>
                 </div>
             </div>
         </div>
@@ -171,15 +172,15 @@
                         <!-- Auth -->
                         @if(auth()->check())
                             <li class="nav-item">
-                                <a class="nav-link {{url()->current() == route('front.inscription') ? 'active':''}}" href="{{route('front.inscription')}}">
+                                <a class="nav-link {{url()->current() == route('compte.index') ? 'active':''}}" href="{{route('compte.index')}}">
                                     Mon compte
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                <form id="logout-form" action="{{ route('front.post.deconnexion') }}" method="POST" style="display: none;">
                                     @csrf
                                 </form>
-                                <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                <a class="nav-link" href="{{ route('front.post.deconnexion') }}" onclick="event.preventDefault();
                                    document.getElementById('logout-form').submit();">
                                     Déconnexion
                                 </a>

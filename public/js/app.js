@@ -1959,8 +1959,138 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: "QuestionComponent"
+  data: function data() {
+    return {
+      showComment: false
+    };
+  },
+  methods: {
+    loadComments: function loadComments() {
+      this.showComment = !this.showComment;
+    }
+  }
 });
 
 /***/ }),
@@ -37762,54 +37892,571 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c(
+    "div",
+    { staticClass: "card w-100 shadow-xss rounded-xxl border-0 p-4 mb-3" },
+    [
+      _vm._m(0),
+      _vm._v(" "),
+      _vm._m(1),
+      _vm._v(" "),
+      _c("div", { staticClass: "card-body d-flex p-0 mt-3" }, [
+        _vm._m(2),
+        _vm._v(" "),
+        _vm._m(3),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            staticClass:
+              "d-flex align-items-center fw-600 text-grey-900 text-dark lh-26 font-xssss",
+            attrs: { href: "#" },
+            on: {
+              click: function($event) {
+                $event.preventDefault()
+                $event.stopPropagation()
+                return _vm.loadComments()
+              }
+            }
+          },
+          [
+            _c("i", {
+              staticClass:
+                "feather-message-circle text-dark text-grey-900 btn-round-sm font-lg"
+            }),
+            _c("span", { staticClass: "d-none-xss" }, [_vm._v("22 Comment")])
+          ]
+        ),
+        _vm._v(" "),
+        _vm._m(4),
+        _vm._v(" "),
+        _vm._m(5)
+      ]),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          directives: [
+            {
+              name: "show",
+              rawName: "v-show",
+              value: _vm.showComment,
+              expression: "showComment"
+            }
+          ]
+        },
+        [_vm._m(6)]
+      )
+    ]
+  )
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "card w-100 shadow-xss rounded-xxl border-0 p-4 mb-3" },
-      [
-        _c("div", { staticClass: "card-body p-0 d-flex" }, [
-          _c("figure", { staticClass: "avatar me-3" }, [
-            _c("img", {
-              staticClass: "shadow-sm rounded-circle w45",
-              attrs: {
-                src: "https://via.placeholder.com/50x50.png",
-                alt: "image"
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("h4", { staticClass: "fw-700 text-grey-900 font-xssss mt-1" }, [
-            _vm._v("Surfiya Zakir  "),
+    return _c("div", { staticClass: "card-body p-0 d-flex" }, [
+      _c("figure", { staticClass: "avatar me-3" }, [
+        _c("img", {
+          staticClass: "shadow-sm rounded-circle w45",
+          attrs: { src: "https://via.placeholder.com/50x50.png", alt: "image" }
+        })
+      ]),
+      _vm._v(" "),
+      _c("h4", { staticClass: "fw-700 text-grey-900 font-xssss mt-1" }, [
+        _vm._v("Surfiya Zakir "),
+        _c(
+          "span",
+          { staticClass: "d-block font-xssss fw-500 mt-1 lh-3 text-grey-500" },
+          [_vm._v("3 hour ago")]
+        )
+      ]),
+      _vm._v(" "),
+      _c(
+        "a",
+        {
+          staticClass: "ms-auto",
+          attrs: {
+            href: "#",
+            id: "dropdownMenu2",
+            "data-bs-toggle": "dropdown",
+            "aria-expanded": "false"
+          }
+        },
+        [
+          _c("i", {
+            staticClass:
+              "ti-more-alt text-grey-900 btn-round-md bg-greylight font-xss"
+          })
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass:
+            "dropdown-menu dropdown-menu-end p-4 rounded-xxl border-0 shadow-lg",
+          attrs: { "aria-labelledby": "dropdownMenu2" }
+        },
+        [
+          _c("div", { staticClass: "card-body p-0 d-flex" }, [
+            _c("i", {
+              staticClass: "feather-bookmark text-grey-500 me-3 font-lg"
+            }),
+            _vm._v(" "),
             _c(
-              "span",
-              {
-                staticClass: "d-block font-xssss fw-500 mt-1 lh-3 text-grey-500"
-              },
-              [_vm._v("3 hour ago")]
+              "h4",
+              { staticClass: "fw-600 text-grey-900 font-xssss mt-0 me-4" },
+              [
+                _vm._v("Save Link "),
+                _c(
+                  "span",
+                  {
+                    staticClass:
+                      "d-block font-xsssss fw-500 mt-1 lh-3 text-grey-500"
+                  },
+                  [_vm._v("Add this to your saved items")]
+                )
+              ]
             )
           ]),
           _vm._v(" "),
+          _c("div", { staticClass: "card-body p-0 d-flex mt-2" }, [
+            _c("i", {
+              staticClass: "feather-alert-circle text-grey-500 me-3 font-lg"
+            }),
+            _vm._v(" "),
+            _c(
+              "h4",
+              { staticClass: "fw-600 text-grey-900 font-xssss mt-0 me-4" },
+              [
+                _vm._v("Hide Post "),
+                _c(
+                  "span",
+                  {
+                    staticClass:
+                      "d-block font-xsssss fw-500 mt-1 lh-3 text-grey-500"
+                  },
+                  [_vm._v("Save to your saved items")]
+                )
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "card-body p-0 d-flex mt-2" }, [
+            _c("i", {
+              staticClass: "feather-alert-octagon text-grey-500 me-3 font-lg"
+            }),
+            _vm._v(" "),
+            _c(
+              "h4",
+              { staticClass: "fw-600 text-grey-900 font-xssss mt-0 me-4" },
+              [
+                _vm._v("Hide all from Group "),
+                _c(
+                  "span",
+                  {
+                    staticClass:
+                      "d-block font-xsssss fw-500 mt-1 lh-3 text-grey-500"
+                  },
+                  [_vm._v("Save to your saved items")]
+                )
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "card-body p-0 d-flex mt-2" }, [
+            _c("i", { staticClass: "feather-lock text-grey-500 me-3 font-lg" }),
+            _vm._v(" "),
+            _c(
+              "h4",
+              { staticClass: "fw-600 mb-0 text-grey-900 font-xssss mt-0 me-4" },
+              [
+                _vm._v("Unfollow Group "),
+                _c(
+                  "span",
+                  {
+                    staticClass:
+                      "d-block font-xsssss fw-500 mt-1 lh-3 text-grey-500"
+                  },
+                  [_vm._v("Save to your saved items")]
+                )
+              ]
+            )
+          ])
+        ]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-body p-0 me-lg-5" }, [
+      _c("p", { staticClass: "fw-500  lh-26 font-xss w-100" }, [
+        _vm._v(
+          "\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n            Morbi nulla dolor, ornare at commodo non,\n            feugiat non nisi. Phasellus faucibus mollis\n            pharetra. Proin blandit ac massa sed rhoncus\n            "
+        ),
+        _c(
+          "a",
+          { staticClass: "fw-600 text-primary ms-2", attrs: { href: "#" } },
+          [_vm._v("See more")]
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      {
+        staticClass:
+          "emoji-bttn d-flex align-items-center fw-600 text-grey-900 text-dark lh-26 font-xssss me-2",
+        attrs: { href: "#" }
+      },
+      [
+        _c("i", {
+          staticClass:
+            "feather-thumbs-up text-white bg-primary-gradiant me-1 btn-round-xs font-xss"
+        }),
+        _vm._v(" "),
+        _c("i", {
+          staticClass:
+            "feather-heart text-white bg-red-gradiant me-2 btn-round-xs font-xss"
+        }),
+        _vm._v("2.8K Like")
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "emoji-wrap" }, [
+      _c("ul", { staticClass: "emojis list-inline mb-0" }, [
+        _c("li", { staticClass: "emoji list-inline-item" }, [
+          _c("i", { staticClass: "em em---1" })
+        ]),
+        _vm._v(" "),
+        _c("li", { staticClass: "emoji list-inline-item" }, [
+          _c("i", { staticClass: "em em-angry" })
+        ]),
+        _vm._v(" "),
+        _c("li", { staticClass: "emoji list-inline-item" }, [
+          _c("i", { staticClass: "em em-anguished" })
+        ]),
+        _vm._v(" "),
+        _c("li", { staticClass: "emoji list-inline-item" }, [
+          _c("i", { staticClass: "em em-astonished" })
+        ]),
+        _vm._v(" "),
+        _c("li", { staticClass: "emoji list-inline-item" }, [
+          _c("i", { staticClass: "em em-blush" })
+        ]),
+        _vm._v(" "),
+        _c("li", { staticClass: "emoji list-inline-item" }, [
+          _c("i", { staticClass: "em em-clap" })
+        ]),
+        _vm._v(" "),
+        _c("li", { staticClass: "emoji list-inline-item" }, [
+          _c("i", { staticClass: "em em-cry" })
+        ]),
+        _vm._v(" "),
+        _c("li", { staticClass: "emoji list-inline-item" }, [
+          _c("i", { staticClass: "em em-full_moon_with_face" })
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      {
+        staticClass:
+          "ms-auto d-flex align-items-center fw-600 text-grey-900 text-dark lh-26 font-xssss",
+        attrs: {
+          href: "#",
+          id: "dropdownMenu21",
+          "data-bs-toggle": "dropdown",
+          "aria-expanded": "false"
+        }
+      },
+      [
+        _c("i", {
+          staticClass:
+            "feather-share-2 text-grey-900 text-dark btn-round-sm font-lg"
+        }),
+        _c("span", { staticClass: "d-none-xs" }, [_vm._v("Share")])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "dropdown-menu dropdown-menu-end p-4 rounded-xxl border-0 shadow-lg",
+        attrs: { "aria-labelledby": "dropdownMenu21" }
+      },
+      [
+        _c(
+          "h4",
+          {
+            staticClass:
+              "fw-700 font-xss text-grey-900 d-flex align-items-center"
+          },
+          [
+            _vm._v("Share "),
+            _c("i", {
+              staticClass:
+                "feather-x ms-auto font-xssss btn-round-xs bg-greylight text-grey-900 me-2"
+            })
+          ]
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "card-body p-0 d-flex" }, [
           _c(
-            "a",
+            "ul",
             {
-              staticClass: "ms-auto",
-              attrs: {
-                href: "#",
-                id: "dropdownMenu2",
-                "data-bs-toggle": "dropdown",
-                "aria-expanded": "false"
-              }
+              staticClass:
+                "d-flex align-items-center justify-content-between mt-2"
             },
             [
-              _c("i", {
+              _c("li", { staticClass: "me-1" }, [
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn-round-lg bg-facebook",
+                    attrs: { href: "#" }
+                  },
+                  [_c("i", { staticClass: "font-xs ti-facebook text-white" })]
+                )
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "me-1" }, [
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn-round-lg bg-twiiter",
+                    attrs: { href: "#" }
+                  },
+                  [
+                    _c("i", {
+                      staticClass: "font-xs ti-twitter-alt text-white"
+                    })
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "me-1" }, [
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn-round-lg bg-linkedin",
+                    attrs: { href: "#" }
+                  },
+                  [_c("i", { staticClass: "font-xs ti-linkedin text-white" })]
+                )
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "me-1" }, [
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn-round-lg bg-instagram",
+                    attrs: { href: "#" }
+                  },
+                  [_c("i", { staticClass: "font-xs ti-instagram text-white" })]
+                )
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn-round-lg bg-pinterest",
+                    attrs: { href: "#" }
+                  },
+                  [_c("i", { staticClass: "font-xs ti-pinterest text-white" })]
+                )
+              ])
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "card-body p-0 d-flex" }, [
+          _c(
+            "ul",
+            {
+              staticClass:
+                "d-flex align-items-center justify-content-between mt-2"
+            },
+            [
+              _c("li", { staticClass: "me-1" }, [
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn-round-lg bg-tumblr",
+                    attrs: { href: "#" }
+                  },
+                  [_c("i", { staticClass: "font-xs ti-tumblr text-white" })]
+                )
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "me-1" }, [
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn-round-lg bg-youtube",
+                    attrs: { href: "#" }
+                  },
+                  [_c("i", { staticClass: "font-xs ti-youtube text-white" })]
+                )
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "me-1" }, [
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn-round-lg bg-flicker",
+                    attrs: { href: "#" }
+                  },
+                  [_c("i", { staticClass: "font-xs ti-flickr text-white" })]
+                )
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "me-1" }, [
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn-round-lg bg-black",
+                    attrs: { href: "#" }
+                  },
+                  [_c("i", { staticClass: "font-xs ti-vimeo-alt text-white" })]
+                )
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn-round-lg bg-whatsup",
+                    attrs: { href: "#" }
+                  },
+                  [_c("i", { staticClass: "font-xs feather-phone text-white" })]
+                )
+              ])
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c(
+          "h4",
+          {
+            staticClass:
+              "fw-700 font-xssss mt-4 text-grey-500 d-flex align-items-center mb-3"
+          },
+          [_vm._v("Copy Link")]
+        ),
+        _vm._v(" "),
+        _c("i", {
+          staticClass:
+            "feather-copy position-absolute right-35 mt-3 font-xs text-grey-500"
+        }),
+        _vm._v(" "),
+        _c("input", {
+          staticClass:
+            "bg-grey text-grey-500 font-xssss border-0 lh-32 p-2 font-xssss fw-600 rounded-3 w-100 theme-dark-bg",
+          attrs: { type: "text", value: "https://socia.be/1rGxjoJKVF0" }
+        })
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "card w-100 border-0 shadow-none right-scroll-bar" },
+      [
+        _c(
+          "div",
+          {
+            staticClass: "card-body border-top-xs pt-4 pb-3 pe-4 d-block ps-5"
+          },
+          [
+            _c(
+              "figure",
+              { staticClass: "avatar position-absolute left-0 ms-2 mt-1" },
+              [
+                _c("img", {
+                  staticClass: "shadow-sm rounded-circle w35",
+                  attrs: {
+                    src: "comptes/images/profils/arnaudex/speciment-profil.png",
+                    alt: "image"
+                  }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
                 staticClass:
-                  "ti-more-alt text-grey-900 btn-round-md bg-greylight font-xss"
+                  "chat p-3 bg-greylight rounded-xxl d-block text-left theme-dark-bg"
+              },
+              [
+                _c(
+                  "h4",
+                  { staticClass: "fw-700 text-grey-900 font-xssss mt-0 mb-1" },
+                  [
+                    _vm._v("Victor Exrixon "),
+                    _c("a", { staticClass: "ms-auto", attrs: { href: "#" } }, [
+                      _c("i", {
+                        staticClass:
+                          "ti-more-alt float-right text-grey-800 font-xsss"
+                      })
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "p",
+                  {
+                    staticClass:
+                      "fw-500 text-grey-500 lh-20 font-xssss w-100 mt-2 mb-0"
+                  },
+                  [
+                    _vm._v(
+                      "\n                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nulla dolor.\n                    "
+                    )
+                  ]
+                )
+              ]
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "card-body pt-0 pb-3 pe-4 d-block ps-5" }, [
+          _c(
+            "figure",
+            { staticClass: "avatar position-absolute left-0 ms-2 mt-1" },
+            [
+              _c("img", {
+                staticClass: "shadow-sm rounded-circle w35",
+                attrs: {
+                  src: "comptes/images/profils/arnaudex/speciment-profil.png",
+                  alt: "image"
+                }
               })
             ]
           ),
@@ -37818,290 +38465,228 @@ var staticRenderFns = [
             "div",
             {
               staticClass:
-                "dropdown-menu dropdown-menu-end p-4 rounded-xxl border-0 shadow-lg",
-              attrs: { "aria-labelledby": "dropdownMenu2" }
+                "chat p-3 bg-greylight rounded-xxl d-block text-left theme-dark-bg"
             },
             [
-              _c("div", { staticClass: "card-body p-0 d-flex" }, [
-                _c("i", {
-                  staticClass: "feather-bookmark text-grey-500 me-3 font-lg"
-                }),
-                _vm._v(" "),
-                _c(
-                  "h4",
-                  { staticClass: "fw-600 text-grey-900 font-xssss mt-0 me-4" },
-                  [
-                    _vm._v("Save Link "),
-                    _c(
-                      "span",
-                      {
-                        staticClass:
-                          "d-block font-xsssss fw-500 mt-1 lh-3 text-grey-500"
-                      },
-                      [_vm._v("Add this to your saved items")]
-                    )
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-body p-0 d-flex mt-2" }, [
-                _c("i", {
-                  staticClass: "feather-alert-circle text-grey-500 me-3 font-lg"
-                }),
-                _vm._v(" "),
-                _c(
-                  "h4",
-                  { staticClass: "fw-600 text-grey-900 font-xssss mt-0 me-4" },
-                  [
-                    _vm._v("Hide Post "),
-                    _c(
-                      "span",
-                      {
-                        staticClass:
-                          "d-block font-xsssss fw-500 mt-1 lh-3 text-grey-500"
-                      },
-                      [_vm._v("Save to your saved items")]
-                    )
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-body p-0 d-flex mt-2" }, [
-                _c("i", {
-                  staticClass:
-                    "feather-alert-octagon text-grey-500 me-3 font-lg"
-                }),
-                _vm._v(" "),
-                _c(
-                  "h4",
-                  { staticClass: "fw-600 text-grey-900 font-xssss mt-0 me-4" },
-                  [
-                    _vm._v("Hide all from Group "),
-                    _c(
-                      "span",
-                      {
-                        staticClass:
-                          "d-block font-xsssss fw-500 mt-1 lh-3 text-grey-500"
-                      },
-                      [_vm._v("Save to your saved items")]
-                    )
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-body p-0 d-flex mt-2" }, [
-                _c("i", {
-                  staticClass: "feather-lock text-grey-500 me-3 font-lg"
-                }),
-                _vm._v(" "),
-                _c(
-                  "h4",
-                  {
-                    staticClass:
-                      "fw-600 mb-0 text-grey-900 font-xssss mt-0 me-4"
-                  },
-                  [
-                    _vm._v("Unfollow Group "),
-                    _c(
-                      "span",
-                      {
-                        staticClass:
-                          "d-block font-xsssss fw-500 mt-1 lh-3 text-grey-500"
-                      },
-                      [_vm._v("Save to your saved items")]
-                    )
-                  ]
-                )
-              ])
-            ]
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "card-body p-0 me-lg-5" }, [
-          _c(
-            "p",
-            { staticClass: "fw-500 text-grey-500 lh-26 font-xssss w-100" },
-            [
-              _vm._v(
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nulla dolor, ornare at commodo non, feugiat non nisi. Phasellus faucibus mollis pharetra. Proin blandit ac massa sed rhoncus "
+              _c(
+                "h4",
+                { staticClass: "fw-700 text-grey-900 font-xssss mt-0 mb-1" },
+                [
+                  _vm._v("Surfiya Zakir "),
+                  _c("a", { staticClass: "ms-auto", attrs: { href: "#" } }, [
+                    _c("i", {
+                      staticClass:
+                        "ti-more-alt float-right text-grey-800 font-xsss"
+                    })
+                  ])
+                ]
               ),
+              _vm._v(" "),
               _c(
-                "a",
+                "p",
                 {
-                  staticClass: "fw-600 text-primary ms-2",
-                  attrs: { href: "#" }
-                },
-                [_vm._v("See more")]
-              )
-            ]
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "card-body d-block p-0" }, [
-          _c("div", { staticClass: "row ps-2 pe-2" }, [
-            _c("div", { staticClass: "col-xs-4 col-sm-4 p-1" }, [
-              _c(
-                "a",
-                {
-                  attrs: {
-                    href: "https://via.placeholder.com/1200x800.png",
-                    "data-lightbox": "roadtrip"
-                  }
+                  staticClass:
+                    "fw-500 text-grey-500 lh-20 font-xssss w-100 mt-2 mb-0"
                 },
                 [
-                  _c("img", {
-                    staticClass: "rounded-3 w-100",
-                    attrs: {
-                      src: "https://via.placeholder.com/1200x800.png",
-                      alt: "image"
-                    }
-                  })
-                ]
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-xs-4 col-sm-4 p-1" }, [
-              _c(
-                "a",
-                {
-                  attrs: {
-                    href: "https://via.placeholder.com/1200x800.png",
-                    "data-lightbox": "roadtrip"
-                  }
-                },
-                [
-                  _c("img", {
-                    staticClass: "rounded-3 w-100",
-                    attrs: {
-                      src: "https://via.placeholder.com/1200x800.png",
-                      alt: "image"
-                    }
-                  })
-                ]
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-xs-4 col-sm-4 p-1" }, [
-              _c(
-                "a",
-                {
-                  staticClass: "position-relative d-block",
-                  attrs: {
-                    href: "https://via.placeholder.com/1200x800.png",
-                    "data-lightbox": "roadtrip"
-                  }
-                },
-                [
-                  _c("img", {
-                    staticClass: "rounded-3 w-100",
-                    attrs: {
-                      src: "https://via.placeholder.com/1200x800.png",
-                      alt: "image"
-                    }
-                  }),
-                  _c(
-                    "span",
-                    { staticClass: "img-count font-sm text-white ls-3 fw-600" },
-                    [_c("b", [_vm._v("+2")])]
+                  _vm._v(
+                    "Lorem ipsum dolor sit amet,\n                        consectetur adipiscing elit. Morbi nulla dolor.\n                    "
                   )
                 ]
               )
-            ])
-          ])
+            ]
+          )
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "card-body d-flex p-0 mt-3" }, [
+        _c(
+          "div",
+          {
+            staticClass:
+              "card-body pt-0 pb-3 pe-4 d-block ps-5 ms-5 position-relative"
+          },
+          [
+            _c(
+              "figure",
+              { staticClass: "avatar position-absolute left-0 ms-2 mt-1" },
+              [
+                _c("img", {
+                  staticClass: "shadow-sm rounded-circle w35",
+                  attrs: {
+                    src: "comptes/images/profils/arnaudex/speciment-profil.png",
+                    alt: "image"
+                  }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass:
+                  "chat p-3 bg-greylight rounded-xxl d-block text-left theme-dark-bg"
+              },
+              [
+                _c(
+                  "h4",
+                  { staticClass: "fw-700 text-grey-900 font-xssss mt-0 mb-1" },
+                  [
+                    _vm._v("Goria Coast "),
+                    _c("a", { staticClass: "ms-auto", attrs: { href: "#" } }, [
+                      _c("i", {
+                        staticClass:
+                          "ti-more-alt float-right text-grey-800 font-xsss"
+                      })
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "p",
+                  {
+                    staticClass:
+                      "fw-500 text-grey-500 lh-20 font-xssss w-100 mt-2 mb-0"
+                  },
+                  [
+                    _vm._v(
+                      "Lorem ipsum dolor sit amet,\n                        consectetur adipiscing elit.\n                    "
+                    )
+                  ]
+                )
+              ]
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass:
+              "card-body pt-0 pb-3 pe-4 d-block ps-5 ms-5 position-relative"
+          },
+          [
+            _c(
+              "figure",
+              { staticClass: "avatar position-absolute left-0 ms-2 mt-1" },
+              [
+                _c("img", {
+                  staticClass: "shadow-sm rounded-circle w35",
+                  attrs: {
+                    src: "comptes/images/profils/arnaudex/speciment-profil.png",
+                    alt: "image"
+                  }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass:
+                  "chat p-3 bg-greylight rounded-xxl d-block text-left theme-dark-bg"
+              },
+              [
+                _c(
+                  "h4",
+                  { staticClass: "fw-700 text-grey-900 font-xssss mt-0 mb-1" },
+                  [
+                    _vm._v("Hurin Seary "),
+                    _c("a", { staticClass: "ms-auto", attrs: { href: "#" } }, [
+                      _c("i", {
+                        staticClass:
+                          "ti-more-alt float-right text-grey-800 font-xsss"
+                      })
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "p",
+                  {
+                    staticClass:
+                      "fw-500 text-grey-500 lh-20 font-xssss w-100 mt-2 mb-0"
+                  },
+                  [
+                    _vm._v(
+                      "Lorem ipsum dolor sit amet,\n                        consectetur adipiscing elit."
+                    )
+                  ]
+                )
+              ]
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass:
+              "card-body pt-0 pb-3 pe-4 d-block ps-5 ms-5 position-relative"
+          },
+          [
+            _c(
+              "figure",
+              { staticClass: "avatar position-absolute left-0 ms-2 mt-1" },
+              [
+                _c("img", {
+                  staticClass: "shadow-sm rounded-circle w35",
+                  attrs: {
+                    src: "comptes/images/profils/arnaudex/speciment-profil.png",
+                    alt: "image"
+                  }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass:
+                  "chat p-3 bg-greylight rounded-xxl d-block text-left theme-dark-bg"
+              },
+              [
+                _c(
+                  "h4",
+                  { staticClass: "fw-700 text-grey-900 font-xssss mt-0 mb-1" },
+                  [
+                    _vm._v("David Goria "),
+                    _c("a", { staticClass: "ms-auto", attrs: { href: "#" } }, [
+                      _c("i", {
+                        staticClass:
+                          "ti-more-alt float-right text-grey-800 font-xsss"
+                      })
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "p",
+                  {
+                    staticClass:
+                      "fw-500 text-grey-500 lh-20 font-xssss w-100 mt-2 mb-0"
+                  },
+                  [
+                    _vm._v(
+                      "Lorem ipsum dolor sit amet,\n                        consectetur adipiscing elit."
+                    )
+                  ]
+                )
+              ]
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "card-body pt-0 pb-3 pe-4 d-block ps-5" }, [
           _c(
-            "a",
-            {
-              staticClass:
-                "emoji-bttn d-flex align-items-center fw-600 text-grey-900 text-dark lh-26 font-xssss me-2",
-              attrs: { href: "#" }
-            },
+            "figure",
+            { staticClass: "avatar position-absolute left-0 ms-2 mt-1" },
             [
-              _c("i", {
-                staticClass:
-                  "feather-thumbs-up text-white bg-primary-gradiant me-1 btn-round-xs font-xss"
-              }),
-              _vm._v(" "),
-              _c("i", {
-                staticClass:
-                  "feather-heart text-white bg-red-gradiant me-2 btn-round-xs font-xss"
-              }),
-              _vm._v("2.8K Like")
-            ]
-          ),
-          _vm._v(" "),
-          _c("div", { staticClass: "emoji-wrap" }, [
-            _c("ul", { staticClass: "emojis list-inline mb-0" }, [
-              _c("li", { staticClass: "emoji list-inline-item" }, [
-                _c("i", { staticClass: "em em---1" })
-              ]),
-              _vm._v(" "),
-              _c("li", { staticClass: "emoji list-inline-item" }, [
-                _c("i", { staticClass: "em em-angry" })
-              ]),
-              _vm._v(" "),
-              _c("li", { staticClass: "emoji list-inline-item" }, [
-                _c("i", { staticClass: "em em-anguished" })
-              ]),
-              _vm._v(" "),
-              _c("li", { staticClass: "emoji list-inline-item" }, [
-                _c("i", { staticClass: "em em-astonished" })
-              ]),
-              _vm._v(" "),
-              _c("li", { staticClass: "emoji list-inline-item" }, [
-                _c("i", { staticClass: "em em-blush" })
-              ]),
-              _vm._v(" "),
-              _c("li", { staticClass: "emoji list-inline-item" }, [
-                _c("i", { staticClass: "em em-clap" })
-              ]),
-              _vm._v(" "),
-              _c("li", { staticClass: "emoji list-inline-item" }, [
-                _c("i", { staticClass: "em em-cry" })
-              ]),
-              _vm._v(" "),
-              _c("li", { staticClass: "emoji list-inline-item" }, [
-                _c("i", { staticClass: "em em-full_moon_with_face" })
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass:
-                "d-flex align-items-center fw-600 text-grey-900 text-dark lh-26 font-xssss",
-              attrs: { href: "#" }
-            },
-            [
-              _c("i", {
-                staticClass:
-                  "feather-message-circle text-dark text-grey-900 btn-round-sm font-lg"
-              }),
-              _c("span", { staticClass: "d-none-xss" }, [_vm._v("22 Comment")])
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass:
-                "ms-auto d-flex align-items-center fw-600 text-grey-900 text-dark lh-26 font-xssss",
-              attrs: {
-                href: "#",
-                id: "dropdownMenu21",
-                "data-bs-toggle": "dropdown",
-                "aria-expanded": "false"
-              }
-            },
-            [
-              _c("i", {
-                staticClass:
-                  "feather-share-2 text-grey-900 text-dark btn-round-sm font-lg"
-              }),
-              _c("span", { staticClass: "d-none-xs" }, [_vm._v("Share")])
+              _c("img", {
+                staticClass: "shadow-sm rounded-circle w35",
+                attrs: {
+                  src: "comptes/images/profils/arnaudex/team-pere-jean.jpg",
+                  alt: "image"
+                }
+              })
             ]
           ),
           _vm._v(" "),
@@ -38109,216 +38694,139 @@ var staticRenderFns = [
             "div",
             {
               staticClass:
-                "dropdown-menu dropdown-menu-end p-4 rounded-xxl border-0 shadow-lg",
-              attrs: { "aria-labelledby": "dropdownMenu21" }
+                "chat p-3 bg-greylight rounded-xxl d-block text-left theme-dark-bg"
             },
             [
               _c(
                 "h4",
-                {
-                  staticClass:
-                    "fw-700 font-xss text-grey-900 d-flex align-items-center"
-                },
+                { staticClass: "fw-700 text-grey-900 font-xssss mt-0 mb-1" },
                 [
-                  _vm._v("Share "),
-                  _c("i", {
-                    staticClass:
-                      "feather-x ms-auto font-xssss btn-round-xs bg-greylight text-grey-900 me-2"
-                  })
+                  _vm._v("Seary Victor "),
+                  _c("a", { staticClass: "ms-auto", attrs: { href: "#" } }, [
+                    _c("i", {
+                      staticClass:
+                        "ti-more-alt float-right text-grey-800 font-xsss"
+                    })
+                  ])
                 ]
               ),
               _vm._v(" "),
-              _c("div", { staticClass: "card-body p-0 d-flex" }, [
-                _c(
-                  "ul",
-                  {
-                    staticClass:
-                      "d-flex align-items-center justify-content-between mt-2"
-                  },
-                  [
-                    _c("li", { staticClass: "me-1" }, [
-                      _c(
-                        "a",
-                        {
-                          staticClass: "btn-round-lg bg-facebook",
-                          attrs: { href: "#" }
-                        },
-                        [
-                          _c("i", {
-                            staticClass: "font-xs ti-facebook text-white"
-                          })
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", { staticClass: "me-1" }, [
-                      _c(
-                        "a",
-                        {
-                          staticClass: "btn-round-lg bg-twiiter",
-                          attrs: { href: "#" }
-                        },
-                        [
-                          _c("i", {
-                            staticClass: "font-xs ti-twitter-alt text-white"
-                          })
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", { staticClass: "me-1" }, [
-                      _c(
-                        "a",
-                        {
-                          staticClass: "btn-round-lg bg-linkedin",
-                          attrs: { href: "#" }
-                        },
-                        [
-                          _c("i", {
-                            staticClass: "font-xs ti-linkedin text-white"
-                          })
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", { staticClass: "me-1" }, [
-                      _c(
-                        "a",
-                        {
-                          staticClass: "btn-round-lg bg-instagram",
-                          attrs: { href: "#" }
-                        },
-                        [
-                          _c("i", {
-                            staticClass: "font-xs ti-instagram text-white"
-                          })
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c(
-                        "a",
-                        {
-                          staticClass: "btn-round-lg bg-pinterest",
-                          attrs: { href: "#" }
-                        },
-                        [
-                          _c("i", {
-                            staticClass: "font-xs ti-pinterest text-white"
-                          })
-                        ]
-                      )
-                    ])
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-body p-0 d-flex" }, [
-                _c(
-                  "ul",
-                  {
-                    staticClass:
-                      "d-flex align-items-center justify-content-between mt-2"
-                  },
-                  [
-                    _c("li", { staticClass: "me-1" }, [
-                      _c(
-                        "a",
-                        {
-                          staticClass: "btn-round-lg bg-tumblr",
-                          attrs: { href: "#" }
-                        },
-                        [
-                          _c("i", {
-                            staticClass: "font-xs ti-tumblr text-white"
-                          })
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", { staticClass: "me-1" }, [
-                      _c(
-                        "a",
-                        {
-                          staticClass: "btn-round-lg bg-youtube",
-                          attrs: { href: "#" }
-                        },
-                        [
-                          _c("i", {
-                            staticClass: "font-xs ti-youtube text-white"
-                          })
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", { staticClass: "me-1" }, [
-                      _c(
-                        "a",
-                        {
-                          staticClass: "btn-round-lg bg-flicker",
-                          attrs: { href: "#" }
-                        },
-                        [
-                          _c("i", {
-                            staticClass: "font-xs ti-flickr text-white"
-                          })
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", { staticClass: "me-1" }, [
-                      _c(
-                        "a",
-                        {
-                          staticClass: "btn-round-lg bg-black",
-                          attrs: { href: "#" }
-                        },
-                        [
-                          _c("i", {
-                            staticClass: "font-xs ti-vimeo-alt text-white"
-                          })
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c(
-                        "a",
-                        {
-                          staticClass: "btn-round-lg bg-whatsup",
-                          attrs: { href: "#" }
-                        },
-                        [
-                          _c("i", {
-                            staticClass: "font-xs feather-phone text-white"
-                          })
-                        ]
-                      )
-                    ])
-                  ]
-                )
-              ]),
-              _vm._v(" "),
               _c(
-                "h4",
+                "p",
                 {
                   staticClass:
-                    "fw-700 font-xssss mt-4 text-grey-500 d-flex align-items-center mb-3"
+                    "fw-500 text-grey-500 lh-20 font-xssss w-100 mt-2 mb-0"
                 },
-                [_vm._v("Copy Link")]
+                [
+                  _vm._v(
+                    "Lorem ipsum dolor sit amet,\n                        consectetur adipiscing elit. Morbi nulla dolor."
+                  )
+                ]
+              )
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "card-body pt-0 pb-3 pe-4 d-block ps-5" }, [
+          _c(
+            "figure",
+            { staticClass: "avatar position-absolute left-0 ms-2 mt-1" },
+            [
+              _c("img", {
+                staticClass: "shadow-sm rounded-circle w35",
+                attrs: {
+                  src: "comptes/images/profils/arnaudex/speciment-profil.png",
+                  alt: "image"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass:
+                "chat p-3 bg-greylight rounded-xxl d-block text-left theme-dark-bg"
+            },
+            [
+              _c(
+                "h4",
+                { staticClass: "fw-700 text-grey-900 font-xssss mt-0 mb-1" },
+                [
+                  _vm._v("Ana Seary "),
+                  _c("a", { staticClass: "ms-auto", attrs: { href: "#" } }, [
+                    _c("i", {
+                      staticClass:
+                        "ti-more-alt float-right text-grey-800 font-xsss"
+                    })
+                  ])
+                ]
               ),
               _vm._v(" "),
-              _c("i", {
-                staticClass:
-                  "feather-copy position-absolute right-35 mt-3 font-xs text-grey-500"
-              }),
-              _vm._v(" "),
-              _c("input", {
-                staticClass:
-                  "bg-grey text-grey-500 font-xssss border-0 lh-32 p-2 font-xssss fw-600 rounded-3 w-100 theme-dark-bg",
-                attrs: { type: "text", value: "https://socia.be/1rGxjoJKVF0" }
+              _c(
+                "p",
+                {
+                  staticClass:
+                    "fw-500 text-grey-500 lh-20 font-xssss w-100 mt-2 mb-0"
+                },
+                [
+                  _vm._v(
+                    "Lorem ipsum dolor sit amet,\n                        consectetur adipiscing elit. Morbi nulla dolor."
+                  )
+                ]
+              )
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "card-body pt-0 pb-3 pe-4 d-block ps-5" }, [
+          _c(
+            "figure",
+            { staticClass: "avatar position-absolute left-0 ms-2 mt-1" },
+            [
+              _c("img", {
+                staticClass: "shadow-sm rounded-circle w35",
+                attrs: {
+                  src: "comptes/images/profils/arnaudex/team-horace.jpg",
+                  alt: "image"
+                }
               })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass:
+                "chat p-3 bg-greylight rounded-xxl d-block text-left theme-dark-bg"
+            },
+            [
+              _c(
+                "h4",
+                { staticClass: "fw-700 text-grey-900 font-xssss mt-0 mb-1" },
+                [
+                  _vm._v("Studio Express "),
+                  _c("a", { staticClass: "ms-auto", attrs: { href: "#" } }, [
+                    _c("i", {
+                      staticClass:
+                        "ti-more-alt float-right text-grey-800 font-xsss"
+                    })
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "p",
+                {
+                  staticClass:
+                    "fw-500 text-grey-500 lh-20 font-xssss w-100 mt-2 mb-0"
+                },
+                [
+                  _vm._v(
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nulla dolor."
+                  )
+                ]
+              )
             ]
           )
         ])

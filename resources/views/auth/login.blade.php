@@ -24,7 +24,7 @@
     </a>
     <!-- Side cover login -->
     <section>
-        <div class="bg-primary position-absolute h-100 top-0 left-0 zindex-100 col-lg-6 col-xl-6 zindex-100 d-none d-lg-flex flex-column justify-content-end" data-bg-size="cover" data-bg-position="center">
+        <div class="bg-primary position-absolute h-110 top-0 left-0 zindex-100 col-lg-6 col-xl-6 zindex-100 d-none d-lg-flex flex-column justify-content-end" data-bg-size="cover" data-bg-position="center">
             <!-- Cover image -->
             <img src="{{asset('assets/img/theme/light/img-v-2.jpg')}}" alt="Image" class="img-as-bg">
             <!-- Overlay text -->
@@ -45,12 +45,12 @@
                         <div class="col-11 col-lg-10 col-xl-6">
                             <div>
                                 <div class="mb-1 text-center">
-                                    <img alt="Image placeholder" src="{{asset('assets/img/brand/logo2.jpg')}}" id="navbar-logo" width="110px" height="60px" style="border-radius:5px">
+                                    <img alt="Image placeholder" src="{{asset('assets/img/brand/logo3.jpg')}}" id="navbar-logo" width="100px" height="100px" style="border-radius:5px">
                                     <h6 class="h3 mb-1 text-center">Bienvenue</h6>
                                     <p class="text-muted mb-0 text-center">Connectez-vous à votre compte pour continuer.</p>
                                 </div>
                                 <span class="clearfix"></span>
-                                <form method="POST" action="{{ route('login') }}">
+                                <form method="POST" action="{{ route('front.post.connexion') }}">
                                     @csrf
                                     <div class="form-group">
                                         <label class="form-control-label">Email address</label>

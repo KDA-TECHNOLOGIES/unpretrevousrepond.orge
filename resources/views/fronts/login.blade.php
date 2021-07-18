@@ -24,7 +24,7 @@
     </a>
     <!-- Side cover login -->
     <section>
-        <div class="bg-primary position-absolute h-100 top-0 left-0 zindex-100 col-lg-6 col-xl-6 zindex-100 d-none d-lg-flex flex-column justify-content-end" data-bg-size="cover" data-bg-position="center">
+        <div class="bg-primary position-absolute h-110 top-0 left-0 zindex-100 col-lg-6 col-xl-6 zindex-100 d-none d-lg-flex flex-column justify-content-end" data-bg-size="cover" data-bg-position="center">
             <!-- Cover image -->
             <img src="{{asset('assets/img/theme/light/img-v-2.jpg')}}" alt="Image" class="img-as-bg">
             <!-- Overlay text -->
@@ -45,20 +45,26 @@
                         <div class="col-11 col-lg-10 col-xl-6">
                             <div>
                                 <div class="mb-1 text-center">
-                                    <img alt="Image placeholder" src="{{asset('assets/img/brand/logo-upvr.jpg')}}" id="navbar-logo" width="80px" height="80px" style="border-radius:5px">
+                                    <img alt="Image placeholder" src="{{asset('assets/img/brand/logo3.jpg')}}" id="navbar-logo" width="100px" height="100px" style="border-radius:5px">
                                     <h6 class="h3 mb-1 text-center">Bienvenue</h6>
                                     <p class="text-muted mb-0 text-center">Connectez-vous à votre compte pour continuer.</p>
                                 </div>
                                 <span class="clearfix"></span>
-                                <form>
+                                <form method="POST" action="{{ route('front.post.connexion') }}">
+                                    @csrf
                                     <div class="form-group">
                                         <label class="form-control-label">Email address</label>
                                         <div class="input-group">
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text"><i data-feather="user"></i></span>
                                             </div>
-                                            <input type="email" class="form-control" id="input-email" placeholder="nom@example.com">
+                                            <input type="email" class="form-control" id="email" name="email" value="{{ old('email') }}" required autofocus placeholder="nom@example.com">
                                         </div>
+                                        @error('email')
+                                        <span class="text-danger" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
                                     </div>
                                     <div class="form-group mb-0">
                                         <div class="d-flex align-items-center justify-content-between">
@@ -66,18 +72,27 @@
                                                 <label class="form-control-label">Mot de passe</label>
                                             </div>
                                             <div class="mb-2">
-                                                <a href="#" class="small text-muted  border-primary" data-toggle="password-text" data-target="#input-password"><i class="fa fa-eye"></i></a>
+                                                @if (Route::has('password.request'))
+                                                    <a class="btn btn-link" href="{{ route('password.request') }}">
+                                                        {{ __('Mot de passe oublié') }}
+                                                    </a>
+                                                @endif
                                             </div>
                                         </div>
                                         <div class="input-group">
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text"><i data-feather="key"></i></span>
                                             </div>
-                                            <input type="password" class="form-control" id="input-password" placeholder="Mot de passe">
+                                            <input type="password" class="form-control" id="password" name="password" required  placeholder="Mot de passe">
                                         </div>
+                                        @error('password')
+                                        <span class="text-danger" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
                                     </div>
                                     <div class="mt-4">
-                                        <button type="button" class="btn btn-block btn-primary">Connexion</button>
+                                        <button type="submit" class="btn btn-block btn-primary">Connexion</button>
                                     </div>
                                 </form>
                                 <div class="py-1 text-center">
@@ -111,3 +126,5 @@
     </section>
 
 @endsection
+
+

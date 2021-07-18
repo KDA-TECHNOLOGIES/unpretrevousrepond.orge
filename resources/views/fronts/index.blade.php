@@ -17,7 +17,7 @@
                         </p>
                         <!-- Buttons -->
                         <div class="mt-5">
-                            <a href="{{route('register')}}" class="btn btn-primary btn-icon  d-lg-inline-block" >Je m'inscris</a>
+                            <a href="{{route('front.inscription')}}" class="btn btn-primary btn-icon  d-lg-inline-block" >Je m'inscris</a>
                             <a href="{{route('front.quisommesnous')}}" class="btn btn-white btn-icon">
                                 <span class="btn-inner--text">Je découvre</span><span class="btn-inner--icon">
                                     <i data-feather="arrow-right"></i>
@@ -578,205 +578,24 @@
             </div>
             <!-- Features -->
             <div class="row mx-lg-n4">
-                <!-- Features - Col 1 -->
-                <div class="col-lg-4 col-md-6 px-lg-4">
-                    <div class="card hover-mask">
+                @for($i = 0; $i < 9; $i++)
+                    <div class="col-lg-4 col-md-6 ">
                         <div class="p-3 d-flex" >
-                            <div>
-                                <div class="icon icon-shape rounded-circle bg-warning text-white mr-4">
-                                    <img alt="Image placeholder" src="{{asset('assets/img/brand/logo-upvr.jpg')}}" id="navbar-logo" width="50px" height="50px" style="border-radius:5px">
+                            <div class="card hover-mask" style="width: 18rem;">
+                                <img src="{{asset('assets/img/theme/light/img-1-440x350.jpg')}}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text text-justify">
+                                        Nous donnerons les généralités sur la foi catholique et nous nous
+                                        intéresserons aux 12 articles de notre foi. Nous irons plus en détails sur
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Lire plus</a>
                                 </div>
                             </div>
-                            <div>
-                                <span class="h6">Grandir dans la prière</span>
-                                <p class="text-sm text-muted mb-0">
-                                    Ici, nous apprendrons les différents types de prières catholiques
-                                    et leurs particularités : prière vocale, silencieuse,
-                                    la Lectio Divina, l’intercession, la louange… Comment atteindre
-                                    le silence intérieur, l’accueil de l’Esprit, etc. Nous recevrons une
-                                    formation approfondie sur deux prières spécifiques de l’Eglise :
-                                    la Liturgie des heures et la sainte messe.
-                                </p>
-                            </div>
+
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 px-lg-4">
-                    <div class="card">
-                        <div class="p-3 d-flex">
-                            <div>
-                                <div class="icon icon-shape rounded-circle bg-primary text-white mr-4">
-                                    <i data-feather="check"></i>
-                                </div>
-                            </div>
-                            <div>
-                                <span class="h6">Mieux comprendre sa foi</span>
-                                <p class="text-sm text-muted mb-0">
-                                    Nous donnerons les généralités sur la foi catholique et nous nous
-                                    intéresserons aux 12 articles de notre foi.
-                                    Nous irons plus en détails sur l’histoire de chaque article et
-                                    les problèmes que l’on rencontre aujourd’hui. A terme,
-                                    le chrétien obtiendra les armes pour se défendre de toutes
-                                    les attaques contre sa foi. Il pourra l’expliquer avec aisance.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 px-lg-4">
-                    <div class="card">
-                        <div class="p-3 d-flex">
-                            <div>
-                                <div class="icon icon-shape rounded-circle bg-danger text-white mr-4">
-                                    <i data-feather="check"></i>
-                                </div>
-                            </div>
-                            <div>
-                                <span class="h6">Se marier et s’épanouir dans le mariage</span>
-                                <p class="text-sm text-muted mb-0">
-                                    Les divorces suivis de regret se multiplient. Cette formation
-                                    s’occupera d’infléchir la tendance pour une vie de couple harmonieuse.
-                                    La formation partira du choix de se marier jusqu’à la vie en couple :
-                                    Comment savoir si on est appelé à se marier, comment fixer les critères
-                                    de choix, le contenu des rencontres entre futurs époux, les fiançailles,
-                                    le mariage (aspect juridique, canonique, pratique), la vie en couple et
-                                    formation permanente. Rien ne sera laissé sous-mains.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Features - Col 2 -->
-                <div class="col-lg-4 col-md-6 px-lg-4">
-                    <div class="card">
-                        <div class="p-3 d-flex">
-                            <div>
-                                <div class="icon icon-shape rounded-circle bg-success text-white mr-4">
-                                    <i data-feather="check"></i>
-                                </div>
-                            </div>
-                            <div>
-                                <span class="h6">Discernement vocationnel</span>
-                                <p class="text-sm text-muted mb-0">
-                                    Sans en avoir l’air, c’est le plus important pour
-                                    s’orienter dans la vie. Comment savoir que l’on est
-                                    appelé à faire ceci ou cela ? Comment faire un choix
-                                    entre plusieurs possibilités ? Quels sont les éléments
-                                    d’un bon discernement ? Comment acquérir le discernement.
-                                    C’est de loin l’une des plus grandes aspirations des jeunes aujourd’hui.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 px-lg-4">
-                    <div class="card">
-                        <div class="p-3 d-flex">
-                            <div>
-                                <div class="icon icon-shape rounded-circle bg-info text-white mr-4">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
-                                        <polyline points="20 6 9 17 4 12"></polyline>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div>
-                                <span class="h6">Spiritualité et psychologie</span>
-                                <p class="text-sm text-muted mb-0">
-                                    Une lacune urgente à combler chez la majorité des catholiques
-                                    est leur ignorance de la Bible. Ici, nous vous introduirons à
-                                    la connaissance de la Bible et vous fournirons les bases
-                                    d’interprétation correcte des textes bibliques. Avec cette
-                                    formation, le chrétien peut avoir un point de vue rigoureux
-                                    et proposer sa signification à ceux qui abusent de son ignorance.
-                                    C’est une étude fondamentale et incontournable.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 px-lg-4">
-                    <div class="card">
-                        <div class="p-3 d-flex">
-                            <div>
-                                <div class="icon icon-shape rounded-circle bg-warning text-white mr-4">
-                                    <i data-feather="check"></i>
-                                </div>
-                            </div>
-                            <div>
-                                <span class="h6">Théologie pour les nuls</span>
-                                <p class="text-sm text-muted mb-0">
-                                    Ici, nous nous intéressons aux dogmes de
-                                    l’Eglise. Sa pensée sur Dieu, le Christ, l’Esprit,
-                                    l’Eglise, la Vierge Marie, le Péché, la Grâce,
-                                    les sacrements, l’Au-dela, etc. Nous saurons
-                                    l’histoire de ces dogmes et les objections qu’on
-                                    leur oppose aujourd’hui. A la fin de la formation,
-                                    le chrétien aura une idée claire des grandes lignes
-                                    de la doctrine catholique et possédera les armes pour
-                                    une foi plus facile à assumer et à expliquer.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Features - Col 3 -->
-                <div class="col-lg-4 col-md-6 px-lg-4">
-                    <div class="card">
-                        <div class="p-3 d-flex">
-                            <div>
-                                <div>
-                                    <div class="icon icon-shape rounded-circle bg-info text-white mr-4">
-                                        <i data-feather="check"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <span class="h6">Morale pour les nuls</span>
-                                <p class="text-sm text-muted mb-0">
-                                    Le pape vient de publier un « Motu Proprio » qui institue le ministère du catéchiste. C’est dire leur importance dans la vie de l’Eglise. Ils ont besoin d’une formation à la taille de leur engagement. Ici, il sera question de l’histoire du catéchisme, de la personne du catéchiste, du catéchiste en situation de classe, des connaissances requises pour son ministère, de sa foi et de son agir dans le monde, des grands débats actuels sur lesquels ils se doivent d’être avertis avant d’aller en classe. C’est dire l’immensité de la tâche et l’irremplaçable place de cette formation pour qui est catéchiste ou qui prétend l’être. Vous serez à l’aise ici.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 px-lg-4">
-                    <div class="card">
-                        <div class="p-3 d-flex">
-                            <div>
-                                <div>
-                                    <div class="icon icon-shape rounded-circle bg-danger text-white mr-4">
-                                        <i data-feather="check"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <span class="h6">Formation des enfants catholiques</span>
-                                <p class="text-sm text-muted mb-0">
-                                    C’est un âge névralgique de la vie. Nos comportements d’aujourd’hui sont le reflet des images imprimées dans notre esprit dès notre enfance. Ici, le parent trouvera l’essentiel de ce qu’il lui faut pour ne pas louper le tournant. Donner Dieu à un enfant. Et tout le reste ira de soi. Comment y parvenir, suivant les différentes étapes de son évolution ? C’est l’objectif de cette classe.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 px-lg-4">
-                    <div class="card">
-                        <div class="p-3 d-flex">
-                            <div>
-                                <div>
-                                    <div class="icon icon-shape rounded-circle bg-primary text-white mr-4">
-                                        <i data-feather="check"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <span class="h6">Couple en attente d’enfants </span>
-                                <p class="text-sm text-muted mb-0">
-                                    Accompagnement, prière, formation et santé.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endfor
             </div>
             <!-- Milestones -->
             <div class="row mt-4">
@@ -910,8 +729,11 @@
                 <p>
                     Pour des renseignements complémentaires, veuillez nous contacter.
                 </p>
-                <a href="https://webpixels.io" class="text-primary text-underline--dashed" >Contactez nous<i data-feather="arrow-right" class="ml-2"></i></a>
+                <a href="{{route('front.contact')}}" class="text-primary text-underline--dashed" >Contactez nous<i data-feather="arrow-right" class="ml-2"></i></a>
             </div>
         </div>
     </section>
+@endsection
+@section('script')
+
 @endsection
